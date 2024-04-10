@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>submit 버튼</title>
+</head>
+<body>
+    <form action="member.php" method="post">
+        <p>회원 가입 폼을 작성하세요</p>
+        회원번호 : <input type="text" name="number">
+        <br><br>
+        우편번호 : <input type="text" name="zipcode">
+        <input type="button" value="검색" onclick="zipcode_search()">
+        <br>
+        회원주소 : <input type="text" name="address">
+        <br><br>
+        <input type="submit" value="전송하려면 클릭하세요">
+    </form>
+</body>
+</html>

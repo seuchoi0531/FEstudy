@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이블 사용하기</title>
+</head>
+<body>
+    <form>
+        <p>1. label 사용 안함</p>
+        이름 : <input type="text" name="name"><br>
+        주소 : <input type="text" name="address">
+
+        <p>2. label 사용함</p>
+        <label>이름 : <input type="text" name="name"></label><br>
+        <label>주소 : <input type="text" name="address"></label>
+
+        <p>3. label과 for 속성을 사용함</p>
+        <label for="na">이름 : </label>
+        <input type="text" id="na" name="name"><br>
+        <label for="ad">주소 : </label>
+        <input type="text" id="ad" name="address"><br>
+    </form>
+</body>
+</html>
