@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상태에 따라 링크 표시 조절하기</title>
+    <style>
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: gold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p><b>
+        <a href="http://www.naver.com" target="_blank">
+            클릭하세요</a>
+    </b></p>
+    <p>방문을 안한 제일 처음에는 red, 밑줄 없음</p>
+    <p>방문을 하고나면 blue, 밑줄 없음</p>
+    <p>마우스를 올리면 green, 밑줄 표시</p>
+    <p>클릭하는 순간은 gold, 밑줄 표시</p>
+</body>
+</html>

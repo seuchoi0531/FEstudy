@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스나 패딩 기준으로 배경 이미지 위치 조절하기</title>
+    <style>
+        .sample1 {
+            border: 5px solid darkred;
+            padding: 30px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+        }
+
+        .sample2 {
+            border: 5px solid darkred;
+            padding: 30px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        
+        .sample3 {
+            border: 5px solid darkred;
+            padding: 30px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="sample1">
+        <p>background-origin 지정 안함</p>
+        <p>background-origin 지정 안함</p>
+    </div>
+
+    <br>
+
+    <div class="sample2">
+        <p>background-origin: border-box 지정함</p>
+        <p>background-origin: border-box 지정함</p>
+    </div>
+
+    <br>
+    
+    <div class="sample3">
+        <p>background-origin: content-box 지정함</p>
+    </div>
+</body>
+</html>

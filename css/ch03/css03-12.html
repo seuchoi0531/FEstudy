@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 이미지 크기 조절하기</title>
+    <style>
+        .sample1 {
+            border: 1px solid grey;
+            height: 150px;
+            width: 200px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+        }
+
+        .sample2 {
+            border: 1px solid grey;
+            height: 150px;
+            width: 200px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .sample3 {
+            border: 1px solid grey;
+            height: 150px;
+            width: 200px;
+            background: url("naver.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h3>원래 크기 배경 이미지</h3>
+    <div class="sample1">
+        <p>원래 크기입니다.</p>
+        <p>원래 크기입니다.</p>
+        <p>원래 크기입니다.</p>
+    </div>
+
+    <h3>contain 배경 이미지</h3>
+    <div class="sample2">
+        <p>contain을 지정했습니다.</p>
+        <p>contain을 지정했습니다.</p>
+        <p>contain을 지정했습니다.</p>
+    </div>
+
+    <h3>cover 배경 이미지</h3>
+    <div class="sample3">
+        <p>cover를 지정했습니다.</p>
+        <p>cover를 지정했습니다.</p>
+        <p>cover를 지정했습니다.</p>
+    </div>
+</body>
+</html>
