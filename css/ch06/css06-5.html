@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>input 필드 스타일 지정하기</title>
+    <style>
+        input[type=text]{
+            width: 200px;
+            height: 10px;
+            padding: 12px 12px;
+            margin: 8px 5px;
+            border: 1px solid #FFD700;
+            background-color: #FFFFE0;
+        }
+    </style>
+</head>
+<body>
+    <p>input 텍스트 필드 스타일</p>
+    <form>
+        <label for="이름상자">이름</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="주소상자">주소</label>
+        <input type="text" id="addr" name="addr">
+    </form>
+</body>
+</html>
