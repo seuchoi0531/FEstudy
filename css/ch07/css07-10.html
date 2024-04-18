@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>멀티 컬럼 표시하기</title>
+    <style>
+        .magazine {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+
+            -webkit-column-width: 100px;
+            -moz-column-width: 100px;
+            column-width: 100px;
+
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 30px;
+
+            -webkit-column-rule-style: solid;
+            -moz-column-rule-style: solid;
+            column-rule-style: dotted;
+
+            -webkit-column-rule-width: 1px;
+            -moz-column-rule-width: 1px;
+            column-rule-width: 1px;
+
+            -webkit-column-rule-color: green;
+            -moz-column-rule-color: green;
+            column-rule-color: green;
+        }
+        
+        h3 {
+            -webkit-column-span: all;
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine">
+        <h3>100세 건강 팁</h3>
+        "내가 먹는 것이 바로 나다"
+        서양의학의 아버지라고 불리는 그리스의 의학자 히포크라테스가 한 말이다.
+        "식약동원"
+        우리나라의 한의학에서는 약과 먹거리를 같은 것으로 간주한다.
+        그렇다면 나를 만드는 약이 바로 먹거리라는 얘기가 된다.
+        동서양의 예로부터 의견 일치를 본 진리다.
+        이제 ㅎ녀대 의학은 건강을 지켜 주는 수퍼 푸드를 제시하고 있는데 수퍼 푸
+        드라고 해서 귀하고 대단한 음식이 아니다.
+    </div>
+</body>
+</html>
