@@ -1,0 +1,25 @@
+.wrap {
+    width: 1340px;
+    height: 3104px;
+}
+
+header {
+    margin: 0 auto;
+    width: 1280px;
+    height: 268px;
+}
+
+.container {
+    margin: 0 auto;
+    padding-bottom: 60px;
+    width: 1280px;
+    height: 2345px;
+}
+
+footer {
+    width: 1340px;
+    height: 430px;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+}
