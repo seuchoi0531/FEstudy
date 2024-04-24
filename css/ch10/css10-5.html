@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <style>
+        .left {float: left; width: 100px;}
+        .list {margin: 0;padding: 0;}
+        .menu {
+            background: lightblue;
+            list-style-type: none;
+            border-radius: 2px;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .paragraph {margin-left: 120px;}
+
+        @media screen and (max-width:600px) {
+            .left {float: none; width: auto;}
+            .menu {
+                display: inline-block;
+                background-clip: padding-box;
+            }
+            .paragraph {margin-left: 4px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <ul class="list">
+            <li class="menu">1번 메뉴</li>
+            <li class="menu">2번 메뉴</li>
+            <li class="menu">3번 메뉴</li>
+            <li class="menu">4번 메뉴</li>
+            <li class="menu">5번 메뉴</li>
+        </ul>
+    </div>
+
+    <div class="paragraph">
+        <h2>미디어 쿼리</h2>
+        <p>이 문서는 @media 규칙을 사용하고 있습니다.</p>
+        <p>브라우저 크기를 조절해보세요.</p>
+        <p>600px까지는 메뉴가 위에 표시됩니다.</p>
+        <p>400px을 넘으면 메뉴가 옆에 표시됩니다.</p>
+    </div>
+</body>
+</html>
