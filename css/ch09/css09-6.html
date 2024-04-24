@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션 시간 구간 지정하기</title>
+    <style>
+        .sample {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 0px;
+            margin-left: 0px;
+            animation-name: example;
+            animation-duration: 8s;
+        }
+
+        @keyframes example {
+            0% {background-color: green;
+                border-radius: 0px;
+                border-width: 2px;}
+            25% {background-color: green;
+                border-radius: 20px;
+                border-width: 4px;}
+            50% {background-color: green;
+                border-radius: 40px;
+                border-width: 6px;}
+            100% {background-color: green;
+                border-radius: 60px;
+                border-width: 8px;}
+        }
+    </style>
+</head>
+<body>
+    <p>8초동안 애니메이션이 실행됩니다</p>
+    <div class="sample"></div>
+    <p>실행이 끝나면 초기 상태로 표시됩니다</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>변환과 변형 함께 지정하기</title>
+    <style>
+        .sample1 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 2s, height 4s, transform 6s;
+        }
+
+        .sample1:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+
+        .sample2 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            transition: width 2s, height 4s, transform 6s;
+        }
+        
+        .sample2:hover {
+            width: 200px;
+            height: 200px;
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+<body>
+    <p>transition과 transform: rotate</p>
+    <div class="sample1"></div>
+    <p>transition과 transform: skew</p>
+    <div class="sample2"></div>
+</body>
+</html>

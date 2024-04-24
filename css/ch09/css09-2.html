@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>변환 속도 조절하기</title>
+    <style>
+        .sample {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 4s;
+            transition-timing-function: ease-in;
+        }
+        .sample:hover {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <p>박스에 마우스를 올리세요.</p>
+    <div class="sample">ease-in</div><br>
+</body>
+</html>

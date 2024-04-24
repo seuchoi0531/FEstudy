@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기본적인 변환 사용하기</title>
+    <style>
+        .sample1 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 4s;
+        }
+
+        .sample1:hover {
+            width: 400px;
+        }
+
+        .sample2 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            transition: width 8s, height 8s;
+        }
+
+        .sample2:hover {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>박스에 마우스를 올리면 4초 동안 너비가 4배 늘어납니다.</p>
+    <div class="sample1"></div>
+    <p>박스에 마우스를 올리면 8초 동안 너비와 높이가 2배 늘어납니다.</p>
+    <div class="sample2"></div>
+</body>
+</html>
