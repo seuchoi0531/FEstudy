@@ -1,0 +1,42 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.Layout-module__column_left {
+    width: 830px;
+    height: 2345px;
+}
+
+.Layout-module__column_right {
+    width: 420px;
+    height: 2142px;
+    margin-left: 30px;
+}
+
+.SettingView-module__layer_setting {
+    width: 92px;
+    height: 40px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+}
+
+#MobileButtonView-module__link_mobile_v {
+    width: 177.25px;
+    height: 56px;
+    padding: 0 29px 0 17px;
+    position: fixed;
+    bottom: 30px;
+    right: 50%;
+    border: 1px solid green;
+    border-radius: 50px;
+    transform: translateX(50%);
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    #MobileButtonView-module__link_mobile_v{
+        display: inline;
+    }
+}

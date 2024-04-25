@@ -1,6 +1,13 @@
+body {
+    margin: 8px;
+    text-align: center;
+}
 .wrap {
-    width: 1340px;
-    height: 3104px;
+    width: 1453px;
+    height: 2901px;
+    display: inline-block;
+    /*width: 1340px;
+    height: 3104px;*/
 }
 
 header {
@@ -20,6 +27,6 @@ footer {
     width: 1340px;
     height: 430px;
     border-top-width: 1px;
-    border-top-color: black;
+    border-top-color: #EBEBEB;
     border-top-style: solid;
 }

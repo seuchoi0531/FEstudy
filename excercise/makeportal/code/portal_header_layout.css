@@ -15,7 +15,7 @@
 .search_area {
     width: 706px;
     height: 58px;
-    border: 1px solid green;
+    border: 1px solid rgb(3, 199, 90);
     position: absolute;
     border-radius: 50px;
     top: 70px;
