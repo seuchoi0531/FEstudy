@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Media Queries 4</title>
+    <style>
+
+      @Media (max-width:767px){
+        body { background-color:red;}
+      }
+
+      @Media screen and (min-width:768px){
+        body { background-color:green;}
+      }
+
+      @Media screen and (min-width:1025px){
+        body { background-color:blue;}
+      }
+
+      @Media screen and (orientaion:landscape){
+        body { background-color:brown;}
+      }
+
+      @Media print{
+        a{text-decoration:none;}
+        a:after{display:inline;content:'('attr(href)')';}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>현재시각 20시 24분..</h1>
+    <h2>다 만들 수 있겠지??</h2>
+    <p style="font-size:30"><a href="https://www.naver.com">네이버</a>입니다.</p>
+  </body>
+</html>
