@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>switch 문 사용하기</title>
+</head>
+<body>
+    <script>
+        var animal = prompt("키우고 있는 애완동물은?");
+
+        switch (animal) {
+            case "개" :
+                document.write("개를 입력했습니다.");
+                document.write("<br>멍멍 멍멍!");
+            break;
+
+            case "고양이" :
+                document.write("고양이를 입력했습니다.");
+                document.write("<br>야옹 야옹!");
+            break;
+
+            case "새" :
+                document.write("새를 입력했습니다.");
+                document.write("<br>짹짹 짹짹!");
+            break;
+            default :
+            document.write("대체 뭘 키우는 겁니까?");
+        }
+        
+        document.write("<br>점수 : " + jumsu);
+    </script>
+</body>
+</html>
