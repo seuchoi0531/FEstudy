@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>do...while 문 사용하기</title>
+</head>
+<body>
+    <script>
+        var dan = 2, num;
+
+        do {
+            num = 1;
+            do {
+                document.write(dan + " * " + num + " = " + dan * num);
+                document.write("<br>");
+                num++;
+            } while (num <= 9);
+            document.write("<br>");
+            dan++;
+        }while (dan <= 9);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>do...while 문 사용하기</title>
+</head>
+<body>
+    <script>
+        var limit, num = 1, sum = 0, multi = 1;
+        limit = prompt("숫자를 입력하세요!");
+        do {
+            sum += num;
+            multi *= num;
+            num++;
+        } while (num <= limit);
+
+        document.write("합 = " + sum);
+        document.write("<br>곱 = " + multi);
+    </script>
+</body>
+</html>

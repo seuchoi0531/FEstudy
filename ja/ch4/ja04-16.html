@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 사용하기</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        var count = prompt("배열의 크기를 입력하세요.");
+
+        for (var i = 0; i <= count - 1; i++) {
+            arr[i] = i;
+        }
+        for (i in arr) {
+            document.write(arr[i] + " ");
+        }
+    </script>
+</body>
+</html>
