@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나만의 객체 만들기</title>
+</head>
+<body>
+    <script>
+        function sale(product, count, price) {
+            this.product = product;
+            this.count = count;
+            this.price = price;
+            this.pay = function() {
+                    return this.count * this.price;
+                }
+        }
+        
+        var sale1 = new sale("phone", 3, 500000)
+        document.write("상품 : " + sale1.product + "<br>");
+        document.write("수량 : " + sale1.count + "<br>");
+        document.write("가격 : " + sale1.price + "<br>");
+        document.write("금액 : " + sale1.pay() + "<br>");
+        
+        document.write("<br>");
+
+        var sale2 = new sale("tablet", 2, 800000)
+        document.write("상품 : " + sale2.product + "<br>");
+        document.write("수량 : " + sale2.count + "<br>");
+        document.write("가격 : " + sale2.price + "<br>");
+        document.write("금액 : " + sale2.pay() + "<br>");
+    </script>
+</body>
+</html>
