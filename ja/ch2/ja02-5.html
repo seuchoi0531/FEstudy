@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <script>
+        var num1 = 7;
+        var num2 = 3;
+        var res;
+
+        res = (num1 < 10) && (num2 < 10);
+        document.write("num1 < 10 && num2 < 10 : ");
+        document.write(res);
+        
+        res = (num1 > 10) && (num2 < 10);
+        document.write("<br>num1 > 10 && num2 < 10 : ");
+        document.write(res);
+        
+        res = (num1 > 10) || (num2 > 10);
+        document.write("<br>num1 > 10 || num2 > 10 : ");
+        document.write(res);
+        
+        res = (num1 > 10) || (num2 < 10);
+        document.write("<br>num1 > 10 || num2 < 10 : ");
+        document.write(res);
+        
+        res = !(num1 == num2);
+        document.write("<br>!(num1 == num2) : ");
+        document.write(res);
+    </script>
+</body>
+</html>
