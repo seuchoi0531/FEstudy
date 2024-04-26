@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>전역 변수와 지역 변수 사용하기</title>
+    <script>
+        function add() {
+            var counter = 0;
+            return counter += 1;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write(add() + "<br>");
+        document.write(add() + "<br>");
+        document.write(add() + "<br>");
+    </script>
+</body>
+</html>

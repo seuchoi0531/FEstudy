@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 내장 함수 사용하기</title>
+</head>
+<body>
+    <script>
+        var num = "abc";
+        
+        if (isNaN(num))
+            document.write("num은 문자를 기억합니다.");
+        else
+            document.write("num은 숫자를 기억합니다.");
+
+        num = "4";
+        document.write("<br>num + 1 = ");
+        document.write(parseInt(num) + 1);
+        
+        num = "4.5";
+        document.write("<br>num + 1 = ");
+        document.write(parseFloat(num) + 1);
+        
+        num = "3+3+3";
+        document.write("<br>3 + 3 + 3 = ");
+        document.write(eval(num));
+    </script>
+</body>
+</html>
