@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM으로 이벤트 할당하기</title>
+</head>
+<body>
+    <p>버튼을 클릭하면 메시지가 표시됩니다.</p>
+    <button id="btn">클릭하세요</button>
+
+    <p id="here"></p>
+
+    <script>
+        document.getElementById("btn").onclick = msgFunc;
+
+        function msgFunc() {
+            document.getElementById("here").innerHTML
+            = "버튼을 클릭했습니다!";
+        }
+    </script>
+</body>
+</html>

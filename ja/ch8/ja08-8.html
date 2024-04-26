@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelectorAll() 메소드로 요소 찾기</title>
+</head>
+<body>
+    <h3 class="greeting1">환영합니다!</h3>
+    <h3 class="greeting2">어서오세요!</h3>
+    <p>반갑습니다!</p>
+    <p>안녕하세요!</p>
+
+    <br><br>
+
+    <button onclick="changeFunc1()">클릭하세요</button>
+    <button onclick="changeFunc2()">클릭하세요</button>
+    <button onclick="changeFunc3()">클릭하세요</button>
+
+    <script>
+        function changeFunc1() {
+            var x = document.querySelectorAll("h3.greeting1");
+            for (i in x) {
+                x[i].style.backgroundColor = "yellow";
+            }            
+        }
+        
+        function changeFunc2() {
+            var x = document.querySelectorAll(".greeting2");
+            for (i in x) {
+                x[i].style.backgroundColor = "red";
+            }            
+        }
+        
+        function changeFunc3() {
+            var x = document.querySelectorAll("p, b");
+            for (i in x) {
+                x[i].style.backgroundColor = "pink";
+            }            
+        }
+    </script>
+</body>
+</html>

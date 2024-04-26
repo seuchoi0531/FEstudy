@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>id로 요소 찾기</title>
+</head>
+<body>
+    <h1 id="sample">환영합니다!</h1>
+    
+    <p>버튼을 클릭하면 위의 제목의 색이 바뀝니다.</p>
+    <button onclick="changeTitle()">클릭하세요</button>
+
+    <script>
+        function changeTitle() {
+            var x = document.getElementById("sample");
+            x.style.color = "blue";
+        }
+    </script>
+</body>
+</html>

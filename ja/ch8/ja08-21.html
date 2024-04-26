@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>첫번째 자식 노드와 마지막 자식 노드 찾기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 드롭박스의 첫번째 자식 노드와 마지막 자식 노드가 표시됩니다.</h3>
+
+    <select size="4" id="selectList"><option>빨간 사과</option><option>노란 바나나</option><option>블루베리</option><option>청포도</option></select><br><br>
+
+    <button onclick="selectFunc()">클릭하세요</button>
+
+    <p id="here1"></p>
+    <p id="here2"></p>
+
+    <script>
+        function selectFunc() {
+            var list = document.getElementById("selectList").firstChild.innerHTML;
+            document.getElementById("here1").innerHTML = list;
+
+            list = document.getElementById("selectList").lastChild.innerHTML;
+            document.getElementById("here2").innerHTML = list;
+        }
+    </script>
+</body>
+</html>

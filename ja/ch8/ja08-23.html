@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>다음 노드와 이전 노드 찾기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 다음 노드와 이전 노드가 표시됩니다.</h3>
+
+    <select size="4" id="selectList"><option id="item1">빨간 사과</option><option id="item2">노란 바나나</option><option id="item3">블루베리</option><option id="item4">청포도</option></select><br><br>
+
+    <button onclick="selectFunc()">클릭하세요</button>
+
+    <p id="here1"></p>
+    <p id="here2"></p>
+
+    <script>
+        function selectFunc() {
+            var x = document.getElementById("item2").nextSibling.innerHTML;
+            document.getElementById("here1").innerHTML = x;
+
+            x = document.getElementById("item2").previousSibling.innerHTML;
+            document.getElementById("here2").innerHTML = x;
+        }
+    </script>
+</body>
+</html>

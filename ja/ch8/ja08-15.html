@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>새로운 노드 만들고 추가하기</title>
+    <style>
+        #samDiv {
+            border: 4px solid red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>버튼을 클릭하면 아래 영역에 문장이 추가됩니다.</h3>
+
+    <div id="samDiv">
+        <p>기존의 문장입니다.</p>
+    </div>
+
+    <button onclick="btnFunc()">클릭하세요</button>
+
+    <script>
+        function btnFunc() {
+            var newNode = document.createElement("p");
+            var textNode = document.createTextNode("추가된 문장입니다.");
+            newNode.appendChild(textNode);
+            document.getElementById("samDiv").appendChild(newNode);
+        }
+    </script>
+</body>
+</html>

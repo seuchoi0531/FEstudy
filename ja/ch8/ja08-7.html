@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>클래스 이름으로 요소 찾기</title>
+</head>
+<body>
+    <h3 class="greeting">환영합니다!</h3>
+    <h3 class="greeting">어서오세요!</h3>
+    <h3 class="greeting">반갑습니다!</h3>
+
+    <button onclick="changeFunc()">클릭하세요</button>
+
+    <script>
+        function changeFunc() {
+            var x = document.getElementsByClassName("greeting");
+            for (i in x) {
+                x[i].style.backgroundColor = "yellow";
+            }
+            
+        }
+    </script>
+</body>
+</html>

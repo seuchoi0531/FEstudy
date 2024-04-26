@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 개념 잡기</title>
+</head>
+<body>
+    <h1 id="sample">환영합니다!</h1>
+
+    <p>버튼을 클릭하면 위의 제목이 바뀝니다.</p>
+    <button onclick="changeTitle()">클릭하세요</button>
+
+    <script>
+        function changeTitle() {
+            var x = document.getElementById("sample");
+            x.innerHTML = "마감시간이 지났습니다.";
+        }
+    </script>
+</body>
+</html>

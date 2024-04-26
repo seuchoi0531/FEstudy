@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>모든 자식 노드 찾기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 body 노드의 모든 자식 노드가 표시됩니다.</h3>
+
+    <select size="4" id="selectList"><option>빨간 사과</option><option>노란 바나나</option><option>블루베리</option><option>청포도</option></select><br><br>
+
+    <button onclick="childrenFunc()">클릭하세요</button>
+
+    <p id="here"></p>
+
+    <script>
+        function childrenFunc() {
+            var c = document.body.children;
+            var txt = "";
+            var i;
+            for (i = 0; i< c.length; i++) {
+                txt = txt + c[i].tagName + "<br>";
+            }
+            document.getElementById("here").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

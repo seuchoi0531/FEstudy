@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>새로운 노드 만들고 추가하기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 새 버튼이 추가됩니다.</h3>
+
+    <button onclick="btnFunc()">클릭하세요</button>
+
+    <script>
+        function btnFunc() {
+            var newNode = document.createElement("button");
+            var textNode = document.createTextNode("새 버튼입니다");
+            newNode.appendChild(textNode);
+            document.body.appendChild(newNode);
+        }
+    </script>
+</body>
+</html>
