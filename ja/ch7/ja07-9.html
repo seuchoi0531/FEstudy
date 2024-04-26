@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>window 객체 사용하기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 2초마다 계속 숫자가 추가됩니다.</h3>
+
+    <button onclick="alertBox()">클릭하세요</button><br>
+    <script>
+        function alertBox() {
+            setInterval(function() {alert("2초가 지났습니다!")}, 2000);
+        }
+    </script>
+</body>
+</html>

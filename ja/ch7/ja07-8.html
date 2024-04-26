@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>window 객체 사용하기</title>
+</head>
+<body onload="count()">
+    <button onclick="first()">네이버</button>
+    <button onclick="second()">다음</button>
+    <br><br>
+
+    <iframe src="http://www.naver.com"></iframe>
+    <iframe src="http://www.daum.net"></iframe>
+
+    <script>
+        function count() {
+            var cnt = window.length;
+            alert(" 프레임 개수 : " + cnt)
+        }
+
+        function first() {
+            window.frames[0].location = "https://www.google.com";
+        }
+        
+        function second() {
+            window.frames[1].location = "https://www.nate.com";
+        }
+    </script>
+</body>
+</html>

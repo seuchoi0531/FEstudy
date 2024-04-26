@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>window 객체 사용하기</title>
+</head>
+<body>
+    <h3>"새 창 열기" 버튼을 클릭한 후 "창 크기 조절하기" 버튼을 클릭하세요.</h3>
+    <button onclick="winOpen()">새 창 열기</button>
+    <button onclick="winResize()">창 크기 조절하기</button>
+
+    <script>
+        var winobj;
+
+        function winOpen() {
+            winobj = window.open("","", "top=200, left=200, width=100, height=100");
+        }
+
+        function winResize() {
+            winobj.resizeBy(300, 300);
+            winobj.focus();
+        }
+    </script>
+</body>
+</html>

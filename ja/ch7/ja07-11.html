@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>window 객체 사용하기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 새로운 윈도우가 표시됩니다.</h3>
+    <button onclick="winOpen()">클릭하세요</button>
+
+    <script>
+        function winOpen() {
+            window.open("http://naver.com", "_blank",
+            "toolbar=yes, scrollbars=yes, resizable=yes,\
+            top=100,left=100,width=400,height=400");
+        }
+    </script>
+</body>
+</html>

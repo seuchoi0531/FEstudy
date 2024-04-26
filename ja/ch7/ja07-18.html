@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>history 객체 사용하기</title>
+</head>
+<body>
+    <h3>버튼을 클릭하며녀 이전 페이지로 돌아갑니다!</h3>
+    <button onclick="goBack()">이전 페이지</button>
+
+    <script>
+        function goBack() {
+            history.back();
+            //history.go(-1);
+        }
+    </script>
+</body>
+</html>
