@@ -50,6 +50,7 @@
     position: absolute;
     top: 18px;
     left: 43px;
+    padding: 0;
 }
 .talk_area {
     width: 46px;
@@ -64,4 +65,41 @@
     position: absolute;
     top: 18px;
     right: -10px;
+}
+.btn_menu {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+.btn_menu:hover {
+    background-color: rgb(245, 247, 248);
+    cursor: pointer;
+}
+#topAsideButton {
+    background-image: url("../img/top_aside_icon.png");
+}
+#topPayButton {
+    background-image: url("../img/top_pay_icon.png");
+}
+#topTalkButton {
+    background-image: url("../img/top_talk_icon.png");
+}
+#topNotiButton {
+    background-image: url("../img/top_noti_icon.png");
+}
+.shortcut_item {
+    display: inline-block;
+    width: 64px;
+    height: 75px;
+    margin-left: -3px;
+}
+.shortcut_item:first-child {
+    margin-left: 0;
 }
