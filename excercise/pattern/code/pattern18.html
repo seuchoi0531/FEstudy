@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+      }
+      .bg {
+        width: 400px;
+        height: 300px;
+        background: #D5EDFC;
+        position: relative;
+        top: -8px;
+        left: -8px;
+      }
+      .roundSquare {
+        width: 120px;
+        height: 180px;
+        background: #D5EDFC;
+        border: 20px #06487A solid;
+        top: 40px;
+        left: 120px;
+        border-radius: 50px;
+      }
+      .eraseSquare {
+        width: 90px;
+        height: 90px;
+        background: #D5EDFC;
+        top: 180px;
+        left: 108px;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+        background: #06487A;
+        border-radius: 100%;
+      }
+      #leftCircle {
+        top: 109.5px;
+        left: 89.5px;    
+      }
+      #rightCircle {
+        top: 109.5px;
+        left: 229.5px;  
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="roundSquare"></div>
+        <div class="eraseSquare"></div>
+        <div id="leftCircle" class="circle"></div>
+        <div id="rightCircle" class="circle"></div>
+    </div>
+</body>
+
+</html>
