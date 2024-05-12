@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+        background: #4F77FF;
+        border: 30px #FFFFFF solid;
+      }
+      .bg {
+        width: 400px;
+        height: 300px;
+        border: none;
+        position: relative;
+        top: -8px;
+        left: -8px;
+      }
+      .square {
+        width: 60px;
+        height: 60px;
+      }
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+      }
+      #tls {
+        top: -30px;
+        left: -30px;
+      }
+      #brs {
+        bottom: -29.5px;
+        right: -29.5px;
+      }
+      #tlc {
+        border-top-left-radius: 0px;
+        top: 60px;
+        left: 60px;
+      }
+      #tlc1 {
+        top: 60px;
+        left: 60px;
+      }
+      #brc {
+        border-bottom-right-radius: 0px;
+        bottom: 60.4px;
+        right: 60.4px;
+      }
+      #brc1 {
+        bottom: 60.5px;
+        right: 60.5px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="tls" class="square"></div>
+        <div id="tlc" class="circle"></div>
+        <div id="tlc1" class="circle"></div>
+        <div id="brs" class="square"></div>
+        <div id="brc" class="circle"></div>
+        <div id="brc1" class="circle"></div>
+    </div>
+</body>
+
+</html>
