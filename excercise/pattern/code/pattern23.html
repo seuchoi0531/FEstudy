@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .wrap {
+            width: 200px;
+            height: 200px;
+            background: #F7BED9;
+            border-width: 50px 100px;
+            border-color: #F7BED9;
+            border-style: solid;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg1 {
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .bg2 {
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+            left: 100px;
+        }
+
+        .purpleCircle {
+            background: #9C274E;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+
+        .pinkCircle {
+            background: #EC007B;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+
+        #trc {
+            top: -40px;
+            left: 60px;
+        }
+
+        #lc {
+            top: 60px;
+            left: -40px;
+        }
+
+        #rc {
+            top: 60px;
+            left: 60px;
+        }
+
+        #brc {
+            top: 160px;
+            left: 60px;
+        }
+
+        #tlc {
+            top: -40px;
+            left: -40px;
+        }
+
+        #blc {
+            top: 160px;
+            left: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="bg1">
+            <div id="trc" class="purpleCircle"></div>
+            <div id="lc" class="purpleCircle"></div>
+            <div id="rc" class="pinkCircle"></div>
+            <div id="brc" class="pinkCircle"></div>
+        </div>
+        <div class="bg2">
+            <div id="tlc" class="purpleCircle"></div>
+            <div id="lc" class="purpleCircle"></div>
+            <div id="rc" class="pinkCircle"></div>
+            <div id="blc" class="pinkCircle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
