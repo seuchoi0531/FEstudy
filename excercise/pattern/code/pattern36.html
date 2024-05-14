@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: fixed;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #BAC7CE;
+            top: 0;
+            left: 0;
+        }
+
+        .ts {
+            width: 200px;
+            height: 200px;
+            background: #475862;
+            transform: rotate(45deg);
+            top: -150px;
+            left: 100px;
+        }
+
+        .bc {
+            width: 100px;
+            height: 100px;
+            background: #5A6042;
+            border: 10px #000000 solid;
+            border-radius: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #lbc {
+            top: 122px;
+            left: 22px;
+        }
+
+        #rbc {
+            top: 3px;
+            left: 242px;
+        }
+
+        .ic {
+            width: 100px;
+            height: 100px;
+            background: #868A64;
+            border-radius: 100%;
+            position: absolute;
+            top: 16px;
+        }
+
+        .icc {
+            width: 30px;
+            height: 30px;
+            background: #4E2B24;
+            border: 5px #000000 solid;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            background: #000000;
+        }
+
+        #ls1 {
+            top: 138.8px;
+            left: 23.6px;
+            transform: rotate(-15deg);
+        }
+
+        #ls2 {
+            top: 181.1px;
+            left: 96.3px;
+            transform: rotate(-15deg);
+        }
+
+        #rs1 {
+            top: 138.8px;
+            right: 23.7px;
+            transform: rotate(15deg);
+        }
+
+        #rs2 {
+            top: 181.1px;
+            right: 96.3px;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="ts"></div>
+    <div id="ls1" class="square"></div>
+    <div id="ls2" class="square"></div>
+    <div id="rs1" class="square"></div>
+    <div id="rs2" class="square"></div>
+    <div id="lbc" class="bc">
+        <div class="ic"></div>
+        <div id="licc" class="icc"></div>
+    </div>
+    <div id="rbc" class="bc">
+        <div class="ic"></div>
+        <div id="ricc" class="icc"></div>
+    </div>
+</body>
+
+</html>

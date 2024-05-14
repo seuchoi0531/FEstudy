@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg1 {
+            width: 400px;
+            height: 150px;
+            background: #E3516E;
+            position: relative;
+            top: -8px;
+            left: -8px;
+            overflow: hidden;
+        }
+
+        .bg2 {
+            width: 400px;
+            height: 150px;
+            background: #E3516E;
+            position: relative;
+            top: -8px;
+            left: -8px;
+            overflow: hidden;
+        }
+
+        .cornerCircle {
+            width: 150px;
+            height: 150px;
+            background: #D9D9D9;
+            border-radius: 100%;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background: #D9D9D9;
+            border-radius: 100%;
+        }
+
+        #circle1 {
+            top: -75px;
+            left: -75px;
+        }
+
+        #circle2 {
+            bottom: -171px;
+            left: 100px;
+        }
+
+        #circle3 {
+            top: -171px;
+            left: 100px;
+        }
+
+        #circle4 {
+            bottom: -75px;
+            right: -75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg1">
+        <div id="circle1" class="cornerCircle"></div>
+        <div id="circle2" class="circle"></div>
+    </div>
+    <div class="bg2">
+        <div id="circle3" class="circle"></div>
+        <div id="circle4" class="cornerCircle"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+        background: #000000;
+      }
+      .bg {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .base1 {
+        width: 240px;
+        height: 120px;
+        background: #37385A;
+        position: fixed;
+        top: 90px;
+        left: 80px;
+        border-radius: 20px;
+      }
+      .base2 {
+        width: 200px;
+        height: 80px;
+        background: #9897AE;
+        position: relative;
+        top: 102px;
+        left: 92px;
+        border-radius: 10px;
+      }
+      .light {
+        width: 50px;
+        height: 80px;
+        background: #C0C3DB;
+        left: 75px;
+        transform: skewX(-15deg);
+      }
+      .line {
+        width: 10px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      #line1 {
+        top: 15px;
+        left: 65px;
+      }
+      #line2 {
+        top: 15px;
+        left: 85px;
+      }
+      #line3 {
+        top: 15px;
+        right: 85px;
+      }
+      #line4 {
+        top: 15px;
+        right: 65px;
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+      }
+      #lc1 {
+        top: 15px;
+        left: 15px;
+      }
+      #lc2 {
+        top: 35px;
+        left: 15px;
+      }
+      #lc3 {
+        bottom: 15px;
+        left: 15px;
+      }
+      #rc1 {
+        top: 15px;
+        right: 15px;
+      }
+      #rc2 {
+        top: 35px;
+        right: 15px;
+      }
+      #rc3 {
+        bottom: 15px;
+        right: 15px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="base1"></div>
+    <div class="base2">
+      <div class="light"></div>
+      <div id="line1" class="line"></div>
+      <div id="line2" class="line"></div>
+      <div id="line3" class="line"></div>
+      <div id="line4" class="line"></div>
+      <div id="lc1" class="circle"></div>
+      <div id="lc2" class="circle"></div>
+      <div id="lc3" class="circle"></div>
+      <div id="rc1" class="circle"></div>
+      <div id="rc2" class="circle"></div>
+      <div id="rc3" class="circle"></div>
+    </div>
+</body>
+
+</html>

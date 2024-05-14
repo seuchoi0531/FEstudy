@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+      }
+      .bg {
+        width: 300px;
+        height: 149.5px;
+        background: #E96A23;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 75.5px 50.5px;
+        position: relative;
+        top: -8px;
+        left: -8px;
+      }
+      .light {
+        height: 149.5px;
+        background: #EBAE11;
+        transform: skewX(-15deg);
+      }
+      #l1 {
+        width: 50px;
+        left: 105px;
+      }
+      #l2 {
+        width: 25px;
+        left: 170px;
+      }
+      .square {
+        width: 200px;
+        height: 120px;
+        background: #000000;
+        border-radius: 12px;
+      }
+      #s1 {
+        width: 240px;
+        height: 120px;
+        top: 15px;
+        left: 30px;
+      }
+      #s2 {
+        width: 270px;
+        height: 90px;
+        top: 30px;
+        left: 15px;
+      }
+      .eclipse {
+        border: 5px #EBAE11 solid;
+        border-radius: 100%;
+      }
+      #e1 {
+        width: 200px;
+        height: 80px;
+        top: 30px;
+        left: 45px;
+      }
+      #e2 {
+        width: 120px;
+        height: 60px;
+        top: 40px;
+        left: 85px;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        background: #EBAE11;
+        border-radius: 100%;
+        top: 50px;
+        left: 125px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="l1" class="light"></div>
+        <div id="l2" class="light"></div>
+        <div id="s1" class="square"></div>
+        <div id="s2" class="square"></div>
+        <div id="e1" class="eclipse"></div>
+        <div id="e2" class="eclipse"></div>
+        <div class="circle"></div>
+      </div>
+</body>
+
+</html>

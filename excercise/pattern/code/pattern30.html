@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        position: absolute;
+        border-radius: 100%;
+      }
+      .bg {
+        width: 400px;
+        height: 300px;
+        background: #161616;
+        position: fixed;
+        border-radius: 0%;
+        top: 0px;
+        left: 0px;
+      }
+      #bigCircle {
+        width: 190px;
+        height: 190px;
+        background: #A22015;
+        position: relative;
+        border: 5px #000000 solid;
+        top: 42px;
+        left: 92px;
+        overflow: hidden;
+      }
+      .sideCircle {
+        width: 70px;
+        height: 70px;
+        background: #A22015;
+        border: 15px #000000 solid;
+      }
+      #sc1 {
+        top: 3px;
+        left: -28px;
+      }
+      #sc2 {
+        top: 3px;
+        right: -28px;
+      }
+      #sc3 {
+        top: 130px;
+        left: 45px;
+      }
+      #cc1 {
+        width: 100px;
+        height: 100px;
+        background: #000000;
+        top: 45px;
+        left: 45px;
+      }
+      #cc2 {
+        width: 50px;
+        height: 50px;
+        background: #000000;
+        border: 10px #E96A23 solid;
+        top: 60px;
+        left: 60px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div id="bigCircle">
+      <div id="sc1" class="sideCircle"></div>
+      <div id="sc2" class="sideCircle"></div>
+      <div id="sc3" class="sideCircle"></div>
+      <div id="cc1"></div>
+      <div id="cc2"></div>
+    </div>
+</body>
+
+</html>
