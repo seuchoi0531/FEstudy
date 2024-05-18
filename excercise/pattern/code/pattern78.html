@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #4F77FF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #mainbg {
+            width: 200px;
+            height: 200px;
+            background: #191919;
+            border-radius: 100%;
+            top: 49.7px;
+            left: 100px;
+            overflow: hidden;
+        }
+
+        #moon {
+            width: 40px;
+            height: 40px;
+            background: #F9E492;
+            border-radius: 100%;
+            top: 40px;
+            left: 40px;
+        }
+
+        .line1 {
+            width: 120px;
+            height: 16px;
+            background: #F9E492;
+        }
+
+        .line2 {
+            width: 20px;
+            height: 16px;
+            background: #D6B73F;
+            transform: skewY(-33deg);
+            left: 100px;
+        }
+
+        #l1 {
+            top: 122px;
+            left: -20px;
+        }
+
+        #l2 {
+            top: 148px;
+            left: -20px;
+        }
+
+        #l3 {
+            top: 174px;
+            left: -20px;
+        }
+
+        #l4 {
+            top: 109px;
+            right: -40px;
+        }
+
+        #l5 {
+            top: 135px;
+            right: -40px;
+        }
+
+        #l6 {
+            top: 161px;
+            right: -40px;
+        }
+
+        #l7 {
+            top: 116px;
+        }
+
+        #l8 {
+            top: 142px;
+        }
+
+        #l9 {
+            top: 168px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="mainbg">
+            <div id="moon"></div>
+            <div id="l1" class="line1"></div>
+            <div id="l2" class="line1"></div>
+            <div id="l3" class="line1"></div>
+            <div id="l4" class="line1"></div>
+            <div id="l5" class="line1"></div>
+            <div id="l6" class="line1"></div>
+            <div id="l7" class="line2"></div>
+            <div id="l8" class="line2"></div>
+            <div id="l9" class="line2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

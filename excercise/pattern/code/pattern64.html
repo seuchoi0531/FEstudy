@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #73C6EA;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 0px transparent solid;
+            border-right: 125px transparent solid;
+            border-left: 125px transparent solid;
+            bottom: 60px;
+            left: 75px;
+        }
+
+        #t1 {
+            border-bottom: 180px #0D1335 solid;
+        }
+
+        #t2 {
+            border-bottom: 140px #DC6638 solid;
+        }
+
+        #t3 {
+            border-bottom: 100px #FBFAE2 solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="t1" class="triangle"></div>
+        <div id="t2" class="triangle"></div>
+        <div id="t3" class="triangle"></div>
+    </div>
+</body>
+
+</html>

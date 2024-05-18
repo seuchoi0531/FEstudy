@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #D86F45;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F5D6B4;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #shape1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            top: 55px;
+            left: 175px;
+        }
+
+        #shape2 {
+            width: 80px;
+            height: 20px;
+            top: 110px;
+            left: 160px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #shape3 {
+            width: 100px;
+            height: 65px;
+            top: 135px;
+            left: 150px;
+            overflow: hidden;
+        }
+
+        #shape4 {
+            width: 140px;
+            height: 40px;
+            top: 205px;
+            left: 130px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            background: #F5D6B4;
+            border-radius: 100%;
+            top: -65px;
+        }
+
+        #c1 {
+            left: -120px;
+        }
+
+        #c2 {
+            right: -120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="shape1"></div>
+        <div id="shape2"></div>
+        <div id="shape3">
+            <div id="c1" class="circle"></div>
+            <div id="c2" class="circle"></div>
+        </div>
+        <div id="shape4"></div>
+    </div>
+</body>
+
+</html>

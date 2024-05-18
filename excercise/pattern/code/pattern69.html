@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 184px;
+            height: 184px;
+            background: #FADE8B;
+            position: relative;
+            border-style: solid;
+            border-color: #E3516E;
+            border-width: 58px 108px;
+            top: -8px;
+            left: -8px;
+        }
+
+        .line {
+            width: 30px;
+            height: 300px;
+            background: #E3516E;
+        }
+
+        #l1 {
+            transform: rotate(45deg) translate(14px, -90px);
+        }
+
+        #l2 {
+            transform: rotate(-45deg) translate(95px, 0px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="l1" class="line"></div>
+        <div id="l2" class="line"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #D86F45;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F5D6B4;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .square {
+            width: 150px;
+            height: 150px;
+        }
+
+        #s1 {
+            transform: translate(125px, 75px);
+        }
+
+        #s2 {
+            transform: scale(0.33333, 1.66666) translate(375px, 45px);
+        }
+
+        #s3 {
+            transform: scale(1.66666, 0.33333) translate(75px, 225px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="s1" class="square"></div>
+        <div id="s2" class="square"></div>
+        <div id="s3" class="square"></div>
+    </div>
+</body>
+
+</html>

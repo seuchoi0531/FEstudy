@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #4FA07B;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .circle {
+            width: 230px;
+            height: 230px;
+            background: #4FA07B;
+            border: 10px #0D1335 solid;
+            border-radius: 100%;
+        }
+
+        #c1 {
+            top: 25px;
+            left: 75px;
+        }
+
+        #c2 {
+            width: 170px;
+            height: 170px;
+            top: 21px;
+            left: 21px;
+        }
+
+        #c3 {
+            width: 110px;
+            height: 110px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 20px transparent solid;
+            border-bottom: 20px transparent solid;
+            border-right: 30px #FBFAE2 solid;
+            border-left: 25px transparent solid;
+        }
+
+        #t1 {
+            top: 130px;
+            left: 150px;
+        }
+
+        #t2 {
+            transform: rotate(180deg);
+            top: 130px;
+            right: 150px;
+        }
+
+        .line1 {
+            width: 210px;
+            height: 210px;
+            border-top: 15px transparent solid;
+            border-right: 10px transparent solid;
+            border-bottom: 15px transparent solid;
+            border-left: 10px #FBFAE2 solid;
+            background: transparent;
+        }
+
+        .line2 {
+            width: 210px;
+            height: 210px;
+            border-top: 15px transparent solid;
+            border-right: 10px #FBFAE2 solid;
+            border-bottom: 15px transparent solid;
+            border-left: 10px transparent solid;
+            background: transparent;
+        }
+
+        #l1 {
+            top: 30px;
+            left: 45px;
+        }
+
+        #l2 {
+            height: 190px;
+            transform: rotate(122deg);
+            top: 79px;
+            left: -35px;
+        }
+
+        #l3 {
+            height: 190px;
+            transform: rotate(-122deg);
+            bottom: 80px;
+            left: -35px;
+        }
+
+        #l4 {
+            top: 30px;
+            right: 45px;
+        }
+
+        #l5 {
+            height: 190px;
+            transform: rotate(122deg);
+            bottom: 80px;
+            right: -35px;
+        }
+
+        #l6 {
+            height: 190px;
+            transform: rotate(-122deg);
+            top: 80px;
+            right: -35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="c1" class="circle">
+            <div id="c2" class="circle">
+                <div id="c3" class="circle"></div>
+            </div>
+        </div>
+        <div id="t1" class="triangle"></div>
+        <div id="t2" class="triangle"></div>
+        <div id="l1" class="line1"></div>
+        <div id="l2" class="line1"></div>
+        <div id="l3" class="line1"></div>
+        <div id="l4" class="line2"></div>
+        <div id="l5" class="line2"></div>
+        <div id="l6" class="line2"></div>
+    </div>
+</body>
+
+</html>

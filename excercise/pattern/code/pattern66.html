@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #D669EC;
+        }
+
+        .bg {
+            width: 220px;
+            height: 220px;
+            background: #FDFBF8;
+            border-color: #D669EC;
+            border-style: solid;
+            border-width: 40px 90px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #hori {
+            width: 20px;
+            height: 220px;
+            left: 100px;
+        }
+
+        #vert {
+            width: 220px;
+            height: 20px;
+            top: 100px;
+        }
+
+        #ls {
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg) translate(22px, 78px);
+        }
+
+        #ts {
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg) translate(22px, -78px);
+        }
+
+        #brs1 {
+            width: 80px;
+            height: 80px;
+            transform: scale(4) rotate(45deg) translate(74.5px, 0px);
+        }
+
+        #brs2 {
+            width: 100px;
+            height: 100px;
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="hori"></div>
+        <div id="vert"></div>
+        <div id="ls"></div>
+        <div id="ts"></div>
+        <div id="brs1"></div>
+        <div id="brs2"></div>
+    </div>
+</body>
+
+</html>

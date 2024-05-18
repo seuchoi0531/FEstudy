@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F0CD48;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #66284A;
+            border-radius: 100%;
+        }
+
+        #c1 {
+            top: 30px;
+            left: 150px;
+        }
+
+        #c2 {
+            top: 170px;
+            left: 50px;
+        }
+
+        #c3 {
+            top: 170px;
+            left: 250px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 0px transparent solid;
+        }
+
+        #t1 {
+            border-right: 100px transparent solid;
+            border-bottom: 140px #F0CD48 solid;
+            border-left: 100px transparent solid;
+            top: 80px;
+            left: 100px;
+        }
+
+        #t2 {
+            border-right: 70px transparent solid;
+            border-bottom: 100px #66284A solid;
+            border-left: 70px transparent solid;
+            top: 105px;
+            left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="c1" class="circle"></div>
+        <div id="c2" class="circle"></div>
+        <div id="c3" class="circle"></div>
+        <div id="t1" class="triangle"></div>
+        <div id="t2" class="triangle"></div>
+    </div>
+</body>
+
+</html>

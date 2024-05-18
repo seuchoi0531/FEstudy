@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #66284A;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .opacbg {
+            width: 600px;
+            height: 600px;
+            background: transparent;
+            top: -150px;
+            left: -100px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #F0CD48;
+            border-radius: 100%;
+            top: 190px;
+            left: 250px;
+        }
+
+        .coverCircle1 {
+            width: 50px;
+            height: 50px;
+            border-bottom-left-radius: 100%;
+            top: 240px;
+            left: 250px;
+            overflow: hidden;
+        }
+
+        .coverCircle2 {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            top: 210px;
+            left: 270px;
+        }
+
+        #opacbg2 {
+            transform: rotate(90deg);
+        }
+
+        #opacbg3 {
+            transform: rotate(180deg);
+        }
+
+        #opacbg4 {
+            transform: rotate(-90deg);
+        }
+
+        #c2 {
+            background: #D669EC;
+        }
+
+        #c3 {
+            background: #FDFBF8;
+        }
+
+        #c4 {
+            background: #D86F45;
+        }
+
+        #c5 {
+            background: #D86F45;
+            top: 10px;
+            left: -60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="opacbg4" class="opacbg">
+            <div id="c4" class="circle"></div>
+            <div class="coverCircle1"></div>
+            <div class="coverCircle2"></div>
+        </div>
+        <div id="opacbg3" class="opacbg">
+            <div id="c3" class="circle"></div>
+            <div class="coverCircle1"></div>
+            <div class="coverCircle2"></div>
+        </div>
+        <div id="opacbg2" class="opacbg">
+            <div id="c2" class="circle"></div>
+            <div class="coverCircle1"></div>
+            <div class="coverCircle2"></div>
+        </div>
+        <div id="opacbg1" class="opacbg">
+            <div id="c1" class="circle"></div>
+            <div class="coverCircle1">
+                <div id="c5" class="circle"></div>
+            </div>
+            <div class="coverCircle2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

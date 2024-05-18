@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F59426;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .opacbg {
+            width: 600px;
+            height: 600px;
+            background: transparent;
+            top: -150px;
+            left: -100px;
+        }
+
+        .t1 {
+            width: 0;
+            height: 0;
+            border-top: 0px transparent solid;
+            border-right: 25px transparent solid;
+            border-bottom: 40px #FFF solid;
+            border-left: 25px transparent solid;
+            top: 180px;
+            left: 275px;
+        }
+
+        .t2 {
+            width: 0;
+            height: 0;
+            border-top: 80px #FFF solid;
+            border-right: 25px transparent solid;
+            border-bottom: 0px transparent solid;
+            border-left: 25px transparent solid;
+            top: 220px;
+            left: 275px;
+        }
+
+        #obg2 {
+            transform: rotate(60deg);
+        }
+
+        #obg3 {
+            transform: rotate(120deg);
+        }
+
+        #obg4 {
+            transform: rotate(180deg);
+        }
+
+        #obg5 {
+            transform: rotate(-60deg);
+        }
+
+        #obg6 {
+            transform: rotate(-120deg);
+        }
+
+        #circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background: #F59426;
+            top: 120px;
+            left: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="obg1" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="obg2" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="obg3" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="obg4" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="obg5" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="obg6" class="opacbg">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+        <div id="circle"></div>
+    </div>
+</body>
+
+</html>
