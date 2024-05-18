@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F4DCBF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .tri {
+            width: 0;
+            height: 0;
+            border-top: 100px transparent solid;
+            border-right: 45px transparent solid;
+            border-bottom: 150px #30383F solid;
+            border-left: 45px transparent solid;
+            top: -50px;
+            left: 155px;
+        }
+
+        .ecl {
+            width: 150px;
+            height: 60px;
+            background: #30383F;
+            border-radius: 100%;
+            top: 190px;
+            left: 125px;
+            overflow: hidden;
+        }
+
+        .belt {
+            width: 130px;
+            height: 40px;
+            background: #30383F;
+            border: 11px #556D7F solid;
+            border-radius: 100%;
+            top: -25px;
+        }
+
+        .sq {
+            width: 30px;
+            height: 20px;
+            background: #FBD038;
+            border-radius: 5px;
+            top: 20px;
+            left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="tri"></div>
+        <div class="ecl">
+            <div class="belt"></div>
+            <div class="sq"></div>
+        </div>
+    </div>
+</body>
+
+</html>

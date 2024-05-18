@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #0D1335;
+            position: relative;
+            top: -8px;
+            left: -8px;
+            transform: translate(0, 0);
+        }
+
+        .eclipse {
+            width: 230px;
+            height: 90px;
+            background: transparent;
+            border: 10px #FBFAE2 solid;
+            border-radius: 100%;
+            transform: translate(75px, 95px);
+        }
+
+        #e2 {
+            border-color: #4FA07B;
+            transform: translate(75px, 95px) rotate(-60deg);
+        }
+
+        #e3 {
+            border-color: #DC6638;
+            transform: translate(75px, 95px) rotate(60deg);
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            background: #73C6EA;
+            border-radius: 100%;
+            transform: translate(180px, 130px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="e1" class="eclipse"></div>
+        <div id="e2" class="eclipse"></div>
+        <div id="e3" class="eclipse"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

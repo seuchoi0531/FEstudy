@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #024817;
+            border-radius: 20px;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #90D3A6;
+            border-radius: 0;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #m1 {
+            width: 200px;
+            height: 20px;
+            top: 220px;
+            left: 100px;
+        }
+
+        #m2 {
+            width: 170px;
+            height: 20px;
+            transform: rotate(90deg);
+            top: 135px;
+            left: 115px;
+        }
+
+        .sub {
+            width: 65px;
+            height: 20px;
+            transform: rotate(30deg);
+        }
+
+        #s1 {
+            top: 106px;
+            left: 144px;
+        }
+
+        #s2 {
+            top: 156px;
+            left: 144px;
+        }
+
+        #s3 {
+            transform: rotate(-30deg);
+            top: 106px;
+            right: 144px;
+        }
+
+        #s4 {
+            transform: rotate(-30deg);
+            top: 156px;
+            right: 144px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="m1"></div>
+        <div id="m2"></div>
+        <div id="s1" class="sub"></div>
+        <div id="s2" class="sub"></div>
+        <div id="s3" class="sub"></div>
+        <div id="s4" class="sub"></div>
+    </div>
+</body>
+
+</html>

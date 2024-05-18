@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #5F133F;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 30px transparent solid;
+            border-right: 25px transparent solid;
+            border-bottom: 30.5px #F7BED9 solid;
+            border-left: 25px transparent solid;
+        }
+
+        .square {
+            width: 50px;
+            height: 80px;
+            background: #F075B0;
+        }
+
+        #t1 {
+            top: 10px;
+            left: 175px;
+        }
+
+        #t2 {
+            transform: rotate(60deg);
+            top: 65px;
+            left: 270px;
+        }
+
+        #t3 {
+            transform: rotate(120deg);
+            top: 175px;
+            left: 270px;
+        }
+
+        #t4 {
+            transform: rotate(180deg);
+            bottom: 10px;
+            left: 175px;
+        }
+
+        #t5 {
+            transform: rotate(-60deg);
+            top: 65px;
+            right: 270.5px;
+        }
+
+        #t6 {
+            transform: rotate(-120deg);
+            top: 175px;
+            right: 270.5px;
+        }
+
+        #s1 {
+            top: 70px;
+            left: 175px;
+        }
+
+        #s2 {
+            transform: rotate(60deg);
+            top: 89.5px;
+            left: 210px;
+        }
+
+        #s3 {
+            transform: rotate(120deg);
+            top: 130px;
+            left: 210px;
+        }
+
+        #s4 {
+            top: 150px;
+            left: 175px;
+        }
+
+        #s5 {
+            transform: rotate(-60deg);
+            top: 89.5px;
+            right: 210px;
+        }
+
+        #s6 {
+            transform: rotate(-120deg);
+            top: 130px;
+            right: 210px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #F7BED9;
+            top: 125px;
+            left: 175px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="s1" class="square"></div>
+        <div id="s2" class="square"></div>
+        <div id="s3" class="square"></div>
+        <div id="s4" class="square"></div>
+        <div id="s5" class="square"></div>
+        <div id="s6" class="square"></div>
+        <div id="t1" class="triangle"></div>
+        <div id="t2" class="triangle"></div>
+        <div id="t3" class="triangle"></div>
+        <div id="t4" class="triangle"></div>
+        <div id="t5" class="triangle"></div>
+        <div id="t6" class="triangle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

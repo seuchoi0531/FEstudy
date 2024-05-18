@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #6592CF;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .v {
+            width: 109px;
+            height: 109px;
+            transform: rotate(39deg) skewX(-13deg);
+            border-top: 25px #6592CF solid;
+            border-right: 25px #293D7E solid;
+            border-bottom: 25px #293D7E solid;
+            border-left: 25px #6592CF solid;
+        }
+
+        #v1 {
+            top: 71px;
+            left: 122px;
+        }
+
+        #v2 {
+            top: 21px;
+            left: 122px;
+        }
+
+        #v3 {
+            top: -30px;
+            left: 122px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="v1" class="v"></div>
+        <div id="v2" class="v"></div>
+        <div id="v3" class="v"></div>
+    </div>
+</body>
+
+</html>

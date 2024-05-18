@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #FAD3E5;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .vert {
+            width: 50px;
+            height: 300px;
+            background: #8B0051;
+            left: 175px;
+        }
+
+        .lt {
+            width: 0;
+            height: 0;
+            border-top: 50px #FAD3E5 solid;
+            border-right: 100px #8B0051 solid;
+            border-bottom: 51px #FAD3E5 solid;
+            border-left: 100px #FAD3E5 solid;
+        }
+
+        .rt {
+            width: 0;
+            height: 0;
+            border-top: 50px #FAD3E5 solid;
+            border-right: 100px #FAD3E5 solid;
+            border-bottom: 51px #FAD3E5 solid;
+            border-left: 100px #8B0051 solid;
+        }
+
+        #t1 {
+            top: 40px;
+            left: -25px;
+        }
+
+        #t2 {
+            bottom: 40px;
+            left: -25px;
+        }
+
+        #t3 {
+            top: 40px;
+            right: -25px;
+        }
+
+        #t4 {
+            bottom: 40px;
+            right: -25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="vert"></div>
+        <div id="t1" class="lt"></div>
+        <div id="t2" class="lt"></div>
+        <div id="t3" class="rt"></div>
+        <div id="t4" class="rt"></div>
+    </div>
+</body>
+
+</html>

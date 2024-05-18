@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #4F77FF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .centerCircle {
+            width: 140px;
+            height: 140px;
+            background: #1038BF;
+            border: 30px #1038BF solid;
+            border-radius: 100%;
+            top: 50px;
+            left: 100px;
+            overflow: hidden;
+        }
+
+        .top {
+            width: 140px;
+            height: 140px;
+            background: #4F77FF;
+            top: -88px;
+        }
+
+        .bottom {
+            width: 140px;
+            height: 140px;
+            background: #4F77FF;
+            border-radius: 10px;
+            top: 82.5px;
+        }
+
+        #left {
+            left: -84px;
+        }
+
+        #right {
+            right: -86px;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            background: #4F77FF;
+            border-radius: 100%;
+            top: 60px;
+            left: 60px;
+        }
+
+        .vert {
+            width: 30px;
+            height: 40px;
+            background: #4F77FF;
+            top: 50px;
+            left: 185px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="centerCircle">
+            <div class="top"></div>
+            <div id="left" class="bottom"></div>
+            <div id="right" class="bottom"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="vert"></div>
+    </div>
+</body>
+
+</html>
