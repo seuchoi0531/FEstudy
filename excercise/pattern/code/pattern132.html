@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #998235;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .shape1 {
+            width: 75px;
+            height: 75px;
+            background: #FFFFFF;
+            border-radius: 100%;
+            top: 75px;
+        }
+
+        .shape2 {
+            width: 25px;
+            height: 75px;
+            background: #191919;
+            display: inline-block;
+            position: relative;
+            margin-right: 4.5px;
+        }
+
+        #sh1 {
+            left: 125px;
+            border-bottom-right-radius: 0;
+        }
+
+        #sh2 {
+            right: 125px;
+            border-bottom-left-radius: 0;
+        }
+
+        #sh3 {
+            width: 150px;
+            height: 75px;
+            background: #EFF33C;
+            border-radius: 75px;
+            bottom: 75px;
+            left: 125px;
+            overflow: hidden;
+        }
+
+        #sh7 {
+            width: 15px;
+            height: 15px;
+            background: #191919;
+            border-radius: 100%;
+            top: 20px;
+            left: 115px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1" class="shape1"></div>
+        <div id="sh2" class="shape1"></div>
+        <div id="sh3">
+            <div id="sh4" class="shape2"></div>
+            <div id="sh5" class="shape2"></div>
+            <div id="sh6" class="shape2"></div>
+            <div id="sh7"></div>
+        </div>
+    </div>
+</body>
+
+</html>
