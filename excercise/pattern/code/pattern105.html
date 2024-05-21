@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #191919;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        #moon {
+            background: #F9E492;
+            top: 50px;
+            left: 100px;
+        }
+
+        #mountain {
+            width: 200px;
+            height: 200px;
+            background: #4F77FF;
+            transform: rotate(45deg);
+            top: 200px;
+            left: 100px;
+            overflow: hidden;
+        }
+
+        #shadow {
+            background: #191919;
+            top: -106px;
+            left: -106px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="moon" class="circle"></div>
+        <div id="mountain">
+            <div id="shadow" class="circle"></div>
+        </div>
+    </div>
+</body>
+
+</html>

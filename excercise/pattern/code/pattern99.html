@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #191919;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .square {
+            width: 80px;
+            height: 20px;
+        }
+
+        #mainbg {
+            width: 100px;
+            height: 150px;
+            background: #4F77FF;
+            top: 75px;
+            left: 150px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        #s1 {
+            bottom: 0;
+            right: 0;
+        }
+
+        #s2 {
+            bottom: 24;
+            right: -20;
+        }
+
+        #s3 {
+            bottom: 48;
+            right: -40;
+        }
+
+        #s4 {
+            bottom: 72;
+            right: -60;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="mainbg">
+            <div id="s1" class="square"></div>
+            <div id="s2" class="square"></div>
+            <div id="s3" class="square"></div>
+            <div id="s4" class="square"></div>
+        </div>
+    </div>
+</body>
+
+</html>

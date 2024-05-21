@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #191919;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .shape1 {
+            width: 70px;
+            height: 80px;
+            background: #E08027;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+            top: 40px;
+        }
+
+        .shape2 {
+            width: 60px;
+            height: 75px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            top: 45px;
+        }
+
+        .shape3 {
+            width: 40px;
+            height: 65px;
+            background: #E08027;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            top: 55px;
+        }
+
+        .shape4 {
+            width: 30px;
+            height: 60px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            top: 60px;
+        }
+
+        .shape5 {
+            width: 70px;
+            height: 140px;
+            background: #E08027;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            bottom: 40px;
+        }
+
+        .shape6 {
+            width: 60px;
+            height: 135px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            bottom: 45px;
+        }
+
+        .shape7 {
+            width: 40px;
+            height: 125px;
+            background: #E08027;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            bottom: 55px;
+        }
+
+        .shape8 {
+            width: 30px;
+            height: 120px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            bottom: 60px;
+        }
+
+        #sh1 {
+            left: 15px;
+        }
+
+        #sh2 {
+            left: 20px;
+        }
+
+        #sh3 {
+            left: 30px;
+        }
+
+        #sh4 {
+            left: 35px;
+        }
+
+        #sh5 {
+            left: 65px;
+        }
+
+        #sh6 {
+            left: 70px;
+        }
+
+        #sh7 {
+            left: 80px;
+        }
+
+        #sh8 {
+            left: 85px;
+        }
+
+        #sh11 {
+            height: 135px;
+            left: 115px;
+        }
+
+        #sh12 {
+            height: 130px;
+            left: 120px;
+        }
+
+        #sh13 {
+            height: 120px;
+            left: 130px;
+        }
+
+        #sh14 {
+            height: 115px;
+            left: 135px;
+        }
+
+        #sh15 {
+            height: 85px;
+            left: 165px;
+        }
+
+        #sh16 {
+            height: 80px;
+            left: 170px;
+        }
+
+        #sh17 {
+            height: 70px;
+            left: 180px;
+        }
+
+        #sh18 {
+            height: 65px;
+            left: 185px;
+        }
+
+        #sha1 {
+            width: 35px;
+            height: 40px;
+            background: #E08027;
+            border-bottom-right-radius: 35px;
+            top: 120px;
+        }
+
+        #sha2 {
+            width: 30px;
+            height: 35px;
+            border-bottom-right-radius: 30px;
+            top: 120px;
+        }
+
+        #sha3 {
+            width: 20px;
+            height: 25px;
+            background: #E08027;
+            border-bottom-right-radius: 20px;
+            top: 120px;
+        }
+
+        #sha4 {
+            width: 15px;
+            height: 20px;
+            border-bottom-right-radius: 15px;
+            top: 120px;
+        }
+
+        #sha5 {
+            width: 60px;
+            height: 40px;
+            background: #E08027;
+            border-top-left-radius: 35px;
+            top: 140px;
+            left: 215px;
+        }
+
+        #sha6 {
+            width: 55px;
+            height: 35px;
+            border-top-left-radius: 30px;
+            top: 145px;
+            left: 220px;
+        }
+
+        #sha7 {
+            width: 45px;
+            height: 25px;
+            background: #E08027;
+            border-top-left-radius: 20px;
+            top: 155px;
+            left: 230px;
+        }
+
+        #sha8 {
+            width: 40px;
+            height: 20px;
+            border-top-left-radius: 15px;
+            top: 160px;
+            left: 235px;
+        }
+
+        #head {
+            width: 50px;
+            height: 30px;
+            background: #E08027;
+            top: 135px;
+            left: 265px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .eye {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        #e1 {
+            top: 137px;
+            left: 295px;
+        }
+
+        #e2 {
+            top: 153px;
+            left: 295px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1" class="shape1"></div>
+        <div id="sh2" class="shape2"></div>
+        <div id="sh3" class="shape3"></div>
+        <div id="sh4" class="shape4"></div>
+        <div id="sh5" class="shape5"></div>
+        <div id="sh6" class="shape6"></div>
+        <div id="sh7" class="shape7"></div>
+        <div id="sh8" class="shape8"></div>
+        <div id="sh11" class="shape1"></div>
+        <div id="sh12" class="shape2"></div>
+        <div id="sh13" class="shape3"></div>
+        <div id="sh14" class="shape4"></div>
+        <div id="sh15" class="shape5"></div>
+        <div id="sh16" class="shape6"></div>
+        <div id="sh17" class="shape7"></div>
+        <div id="sh18" class="shape8"></div>
+        <div id="sha1"></div>
+        <div id="sha2"></div>
+        <div id="sha3"></div>
+        <div id="sha4"></div>
+        <div id="sha5"></div>
+        <div id="sha6"></div>
+        <div id="sha7"></div>
+        <div id="sha8"></div>
+        <div id="head"></div>
+        <div id="e1" class="eye"></div>
+        <div id="e2" class="eye"></div>
+    </div>
+</body>
+
+</html>

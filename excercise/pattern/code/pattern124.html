@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #62306D;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #F7EC7D;
+            border-radius: 100%;
+            top: 100px;
+        }
+
+        #sh1 {
+            width: 100px;
+            height: 100px;
+            background: #AA445F;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: 50px;
+            left: 80px;
+        }
+
+        #sh2 {
+            width: 100px;
+            height: 100px;
+            background: #E38F66;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            bottom: 50px;
+            right: 80px;
+        }
+
+        #sh3 {
+            left: 80px;
+        }
+
+        #sh4 {
+            right: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1"></div>
+        <div id="sh2"></div>
+        <div id="sh3" class="circle"></div>
+        <div id="sh4" class="circle"></div>
+    </div>
+</body>
+
+</html>

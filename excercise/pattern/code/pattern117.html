@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #293462;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .shape1 {
+            width: 50px;
+            height: 140px;
+            background: #FE5F55;
+            bottom: 80px;
+        }
+
+        .shape2 {
+            width: 50px;
+            height: 40px;
+            bottom: 80px;
+        }
+
+        .shape3 {
+            width: 30px;
+            height: 30px;
+            bottom: 130px;
+            border-radius: 100%;
+        }
+
+        #ls1 {
+            border-top-right-radius: 40px;
+            left: 150px;
+        }
+
+        #ls2 {
+            border-top-right-radius: 40px;
+            left: 150px;
+        }
+
+        #ls3 {
+            left: 165px;
+        }
+
+        #rs1 {
+            border-top-left-radius: 40px;
+            right: 150px;
+        }
+
+        #rs2 {
+            border-top-left-radius: 40px;
+            right: 150px;
+        }
+
+        #rs3 {
+            right: 165px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="ls1" class="shape1"></div>
+        <div id="ls2" class="shape2"></div>
+        <div id="ls3" class="shape3"></div>
+        <div id="rs1" class="shape1"></div>
+        <div id="rs2" class="shape2"></div>
+        <div id="rs3" class="shape3"></div>
+    </div>
+</body>
+
+</html>

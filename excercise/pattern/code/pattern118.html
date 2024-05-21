@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #172D2C;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #sh1 {
+            width: 0;
+            height: 0;
+            border-top: 65px transparent solid;
+            border-right: 20px transparent solid;
+            border-bottom: 65px transparent solid;
+            border-left: 180px #E9AF53 solid;
+            top: 20px;
+            right: 0;
+        }
+
+        #sh2 {
+            width: 180px;
+            height: 130px;
+            background: #E9AF53;
+            transform: skewY(20deg);
+            top: 117.5px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1"></div>
+        <div id="sh2"></div>
+    </div>
+</body>
+
+</html>

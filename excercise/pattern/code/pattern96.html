@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #191919;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .vert {
+            width: 40px;
+            height: 130px;
+            background: #FE5F55;
+            left: 180px;
+        }
+
+        .hori {
+            width: 180px;
+            height: 40px;
+            background: #A64942;
+            top: 130px;
+        }
+
+        #v1 {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #v2 {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            bottom: 0;
+        }
+
+        #h1 {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            right: 0;
+        }
+
+        #h2 {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="v1" class="vert"></div>
+        <div id="v2" class="vert"></div>
+        <div id="h1" class="hori"></div>
+        <div id="h2" class="hori"></div>
+    </div>
+</body>
+
+</html>

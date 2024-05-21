@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 150px;
+            border-top: 75px #222730 solid;
+            border-bottom: 76px #222730 solid;
+            background: #4CAAB3;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .square {
+            width: 150px;
+            height: 150px;
+            border: 50px #222730 solid;
+            background: #4CAAB3;
+            transform: rotate(45deg);
+            top: -50px;
+            left: 75px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            background: #393E46;
+            border-radius: 100%;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="square">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+
+</html>

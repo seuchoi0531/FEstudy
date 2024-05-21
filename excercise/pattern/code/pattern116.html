@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 200px;
+            height: 100px;
+            background: #F7EC7D;
+            border-width: 101px 101px;
+            border-style: solid;
+            border-color: #62306D;
+            position: relative;
+            top: -9px;
+            left: -9px;
+            overflow: hidden;
+        }
+
+        #right {
+            width: 60px;
+            height: 100px;
+            background: #E38F66;
+            right: 0;
+        }
+
+        .bigCircle {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: #62306D;
+        }
+
+        .smallCircle {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background: #62306D;
+            left: 130px;
+        }
+
+        #bc1 {
+            top: -20px;
+            left: -20px;
+        }
+
+        #bc2 {
+            top: -20px;
+            right: -20px;
+        }
+
+        #bc3 {
+            bottom: -20px;
+            left: -20px;
+        }
+
+        #bc4 {
+            bottom: -20px;
+            right: -20px;
+        }
+
+        #sc1 {
+            top: -10px;
+        }
+
+        #sc2 {
+            bottom: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="right"></div>
+        <div id="bc1" class="bigCircle"></div>
+        <div id="bc2" class="bigCircle"></div>
+        <div id="bc3" class="bigCircle"></div>
+        <div id="bc4" class="bigCircle"></div>
+        <div id="sc1" class="smallCircle"></div>
+        <div id="sc2" class="smallCircle"></div>
+    </div>
+</body>
+
+</html>

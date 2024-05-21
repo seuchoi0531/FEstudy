@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F3AC3C;
+            position: relative;
+            border-radius: 0%;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bigCircle {
+            width: 400px;
+            height: 400px;
+            background: #998235;
+        }
+
+        #bc1 {
+            top: -250px;
+        }
+
+        #mc {
+            width: 250px;
+            height: 250px;
+            background: #F3AC3C;
+            top: 25px;
+            left: 75px;
+        }
+
+        #sc {
+            width: 200px;
+            height: 200px;
+            background: #1A4341;
+            top: 50px;
+            left: 100px;
+        }
+
+        #bc2 {
+            bottom: -250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="bc1" class="bigCircle"></div>
+        <div id="mc"></div>
+        <div id="sc"></div>
+        <div id="bc2" class="bigCircle"></div>
+    </div>
+</body>
+
+</html>

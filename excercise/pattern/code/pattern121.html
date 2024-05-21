@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #F2E09F;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #sh1 {
+            width: 400px;
+            height: 150px;
+            background: #C36271;
+        }
+
+        #sh2 {
+            width: 380px;
+            height: 150px;
+            background: #F2E09F;
+            border-bottom-right-radius: 100px;
+        }
+
+        #sh3 {
+            width: 380px;
+            height: 150px;
+            background: #C36271;
+            border-top-left-radius: 100px;
+            bottom: 0;
+            right: 0;
+        }
+
+        #sh4 {
+            width: 100px;
+            height: 100px;
+            background: #C36271;
+            border-radius: 100%;
+            top: 100px;
+            left: 150px;
+            overflow: hidden;
+        }
+
+        #sh5 {
+            width: 100px;
+            height: 50px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1"></div>
+        <div id="sh2"></div>
+        <div id="sh3"></div>
+        <div id="sh4">
+            <div id="sh5"></div>
+        </div>
+    </div>
+</body>
+
+</html>
