@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #512B2A;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #EA6B62;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .side {
+            width: 40px;
+            height: 120px;
+            border-radius: 10px;
+            top: 65px
+        }
+
+        #handle {
+            width: 20px;
+            height: 140px;
+            bottom: 0;
+            left: 190px;
+        }
+
+        #left {
+            left: 110px;
+        }
+
+        #right {
+            right: 110px;
+        }
+
+        #center {
+            width: 120px;
+            height: 80px;
+            top: 80px;
+            left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="handle"></div>
+        <div id="left" class="side"></div>
+        <div id="right" class="side"></div>
+        <div id="center"></div>
+    </div>
+</body>
+
+</html>
