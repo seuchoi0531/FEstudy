@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #6592CF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg>div {
+            bottom: 159px;
+            right: 124px;
+            transform: rotate(45deg);
+        }
+
+        .bg>div>div:nth-child(1) {
+            width: 200px;
+            height: 50px;
+            background: #060F55;
+            border-radius: 25px;
+        }
+
+        .bg>div>div:nth-child(2) {
+            width: 200px;
+            height: 30px;
+            background: #060F55;
+            top: 70px;
+            left: 75px;
+            border-radius: 15px;
+        }
+
+        .bg>div>div:nth-child(3) {
+            width: 200px;
+            height: 30px;
+            background: #060F55;
+            top: -50px;
+            left: 75px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
