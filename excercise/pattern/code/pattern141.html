@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #F48B26;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .shape1 {
+            width: 100px;
+            height: 50px;
+            background: #FEFF58;
+        }
+
+        .shape1:nth-child(2n+1) {
+            top: 150px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .shape1:nth-child(2n) {
+            bottom: 150px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        .shape2 {
+            width: 60px;
+            height: 30px;
+            background: #F48B26;
+        }
+
+        .shape2:nth-child(2n) {
+            top: 150px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .shape2:nth-child(2n+1) {
+            bottom: 150px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        #bc1 {
+            left: -10px;
+        }
+
+        #bc2 {
+            left: 70px;
+        }
+
+        #bc3 {
+            left: 150px;
+        }
+
+        #bc4 {
+            left: 230px;
+        }
+
+        #bc5 {
+            right: -10px;
+        }
+
+        #sc1 {
+            left: 10px;
+        }
+
+        #sc2 {
+            left: 90px;
+        }
+
+        #sc3 {
+            left: 170px;
+        }
+
+        #sc4 {
+            left: 250px;
+        }
+
+        #sc5 {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="bc1" class="shape1"></div>
+        <div id="bc2" class="shape1"></div>
+        <div id="bc3" class="shape1"></div>
+        <div id="bc4" class="shape1"></div>
+        <div id="bc5" class="shape1"></div>
+        <div id="sc1" class="shape2"></div>
+        <div id="sc2" class="shape2"></div>
+        <div id="sc3" class="shape2"></div>
+        <div id="sc4" class="shape2"></div>
+        <div id="sc5" class="shape2"></div>
+    </div>
+</body>
+
+</html>
