@@ -7,107 +7,189 @@
     <style>
         div {
             position: absolute;
-            background: #66284A;
         }
 
         .bg {
             width: 400px;
             height: 300px;
+            background: #66284A;
             position: relative;
             top: -8px;
             left: -8px;
         }
 
-        .opacbg {
-            width: 600px;
-            height: 600px;
-            background: transparent;
-            top: -150px;
-            left: -100px;
-        }
-
-        .circle {
+        #sh1 {
             width: 100px;
-            height: 100px;
+            height: 50px;
             background: #F0CD48;
-            border-radius: 100%;
-            top: 190px;
-            left: 250px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: 40px;
+            left: 150px;
         }
 
-        .coverCircle1 {
+        #sh2 {
             width: 50px;
             height: 50px;
-            border-bottom-left-radius: 100%;
-            top: 240px;
-            left: 250px;
-            overflow: hidden;
+            background: #F0CD48;
+            border-bottom-right-radius: 50px;
+            top: 90px;
+            left: 200px;
         }
 
-        .coverCircle2 {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            top: 210px;
-            left: 270px;
-        }
-
-        #opacbg2 {
-            transform: rotate(90deg);
-        }
-
-        #opacbg3 {
-            transform: rotate(180deg);
-        }
-
-        #opacbg4 {
-            transform: rotate(-90deg);
-        }
-
-        #c2 {
+        #sh3 {
+            width: 100px;
+            height: 50px;
             background: #D669EC;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 150px;
+            left: 210px;
         }
 
-        #c3 {
+        #sh4 {
+            width: 50px;
+            height: 50px;
+            background: #D669EC;
+            border-top-right-radius: 50px;
+            top: 100px;
+            left: 260px;
+        }
+
+        #sh5 {
+            width: 100px;
+            height: 50px;
             background: #FDFBF8;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 210px;
+            left: 150px;
         }
 
-        #c4 {
-            background: #D86F45;
+        #sh6 {
+            width: 50px;
+            height: 50px;
+            background: #FDFBF8;
+            border-top-left-radius: 50px;
+            top: 160px;
+            left: 150px;
         }
 
-        #c5 {
+        #sh7 {
+            width: 100px;
+            height: 50px;
             background: #D86F45;
-            top: 10px;
-            left: -60px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: 100px;
+            left: 90px;
+        }
+
+        #sh8 {
+            width: 50px;
+            height: 50px;
+            background: #D86F45;
+            border-bottom-left-radius: 50px;
+            top: 150px;
+            left: 90px;
+        }
+
+        #sh11 {
+            width: 60px;
+            height: 30px;
+            background: #66284A;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: 60px;
+            left: 170px;
+        }
+
+        #sh12 {
+            width: 30px;
+            height: 30px;
+            background: #66284A;
+            border-bottom-right-radius: 50px;
+            top: 90px;
+            left: 200px;
+        }
+
+        #sh13 {
+            width: 60px;
+            height: 30px;
+            background: #66284A;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 150px;
+            left: 230px;
+        }
+
+        #sh14 {
+            width: 30px;
+            height: 30px;
+            background: #66284A;
+            border-top-right-radius: 50px;
+            top: 120px;
+            left: 260px;
+        }
+
+        #sh15 {
+            width: 60px;
+            height: 30px;
+            background: #66284A;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 210px;
+            left: 170px;
+        }
+
+        #sh16 {
+            width: 30px;
+            height: 30px;
+            background: #66284A;
+            border-top-left-radius: 50px;
+            top: 180px;
+            left: 170px;
+        }
+
+        #sh17 {
+            width: 60px;
+            height: 30px;
+            background: #66284A;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: 120px;
+            left: 110px;
+        }
+
+        #sh18 {
+            width: 30px;
+            height: 30px;
+            background: #66284A;
+            border-bottom-left-radius: 50px;
+            top: 150px;
+            left: 110px;
         }
     </style>
 </head>
 
 <body>
     <div class="bg">
-        <div id="opacbg4" class="opacbg">
-            <div id="c4" class="circle"></div>
-            <div class="coverCircle1"></div>
-            <div class="coverCircle2"></div>
-        </div>
-        <div id="opacbg3" class="opacbg">
-            <div id="c3" class="circle"></div>
-            <div class="coverCircle1"></div>
-            <div class="coverCircle2"></div>
-        </div>
-        <div id="opacbg2" class="opacbg">
-            <div id="c2" class="circle"></div>
-            <div class="coverCircle1"></div>
-            <div class="coverCircle2"></div>
-        </div>
-        <div id="opacbg1" class="opacbg">
-            <div id="c1" class="circle"></div>
-            <div class="coverCircle1">
-                <div id="c5" class="circle"></div>
-            </div>
-            <div class="coverCircle2"></div>
-        </div>
+        <div id="sh1"></div>
+        <div id="sh2"></div>
+        <div id="sh3"></div>
+        <div id="sh4"></div>
+        <div id="sh5"></div>
+        <div id="sh6"></div>
+        <div id="sh7"></div>
+        <div id="sh8"></div>
+        <div id="sh11"></div>
+        <div id="sh12"></div>
+        <div id="sh13"></div>
+        <div id="sh14"></div>
+        <div id="sh15"></div>
+        <div id="sh16"></div>
+        <div id="sh17"></div>
+        <div id="sh18"></div>
     </div>
 </body>
 
