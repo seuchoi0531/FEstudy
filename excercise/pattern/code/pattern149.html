@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #009B3A;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .ye {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 75px 50px 75px;
+        }
+
+        #sh1 {
+            top: 50px;
+            left: 50px;
+            border-color: transparent #FEDF00 #FEDF00 transparent;
+        }
+
+        #sh2 {
+            top: 50px;
+            right: 50px;
+            border-color: transparent transparent #FEDF00 #FEDF00;
+            border-width: 50px 75px 51px 77px;
+        }
+
+        #sh3 {
+            bottom: 50px;
+            left: 49px;
+            border-color: #FEDF00 #FEDF00 transparent transparent;
+            border-width: 51px 75px 51px 77px;
+        }
+
+        #sh4 {
+            bottom: 50px;
+            right: 50px;
+            border-color: #FEDF00 transparent transparent #FEDF00;
+            border-width: 51px 76px 51px 75px;
+        }
+
+        #sh5 {
+            width: 120px;
+            height: 120px;
+            background: #002776;
+            border-radius: 100px;
+            top: 90px;
+            left: 140px;
+            overflow: hidden;
+        }
+
+        #sh5>div {
+            width: 200px;
+            height: 200px;
+            background: #002776;
+            border: 10px #FFFFFF solid;
+            border-radius: 100%;
+            top: 30px;
+            left: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div id="sh1" class="ye"></div>
+        <div id="sh2" class="ye"></div>
+        <div id="sh3" class="ye"></div>
+        <div id="sh4" class="ye"></div>
+        <div id="sh5">
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
