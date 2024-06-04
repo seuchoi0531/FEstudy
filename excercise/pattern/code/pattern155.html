@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #4F77FF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg>div:first-child {
+            width: 150px;
+            height: 150px;
+            background: #FFFFFF;
+            top: 25px;
+            left: 25px;
+        }
+
+        .bg>div:last-child {
+            width: 200px;
+            height: 50px;
+            background: #4F77FF;
+            top: 125px;
+            left: 100px;
+        }
+
+        .bg>div:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            background: #FFFFFF;
+            bottom: 25px;
+            right: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
