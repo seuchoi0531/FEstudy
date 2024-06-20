@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #FFFFFF;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #4F77FF;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg>div:nth-child(3n+1) {
+            width: 90px;
+            height: 140px;
+        }
+
+        .bg>div:nth-child(3n+2) {
+            width: 90px;
+            height: 120px;
+        }
+
+        .bg>div:nth-child(3n) {
+            width: 50px;
+            height: 100px;
+            background: #4F77FF;
+        }
+
+        .bg>div:nth-child(1) {
+            top: 20px;
+            left: 20px;
+        }
+
+        .bg>div:nth-child(2) {
+            top: 20px;
+            left: 130px;
+        }
+
+        .bg>div:nth-child(3) {
+            top: 20px;
+            left: 150px;
+        }
+
+        .bg>div:nth-child(4) {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .bg>div:nth-child(5) {
+            bottom: 20px;
+            right: 130px;
+        }
+
+        .bg>div:nth-child(6) {
+            bottom: 20px;
+            right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

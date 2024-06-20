@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #BE3184;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg>div:first-child {
+            width: 100px;
+            height: 200px;
+            background: #611B3F;
+            left: 200px;
+        }
+
+        .bg>div:nth-child(2) {
+            width: 100px;
+            height: 200px;
+            background: #611B3F;
+            top: 100px;
+            left: 100px;
+        }
+
+        .bg>div:last-child {
+            width: 140px;
+            height: 40px;
+            background: #BE3184;
+            top: 130px;
+            left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
