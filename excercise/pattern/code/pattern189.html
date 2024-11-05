@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #B53733;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        .bg>div:last-child {
+            width: 80px;
+            height: 160px;
+            background: #EA7457;
+            top: 70px;
+            left: 105px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+        }
+
+        .bg>div:nth-child(2) {
+            width: 30px;
+            height: 150px;
+            background: #EA7457;
+            top: 75px;
+            left: 210px;
+        }
+
+        .bg>div:first-child {
+            width: 160px;
+            height: 160px;
+            background: #EA7457;
+            top: 70px;
+            right: 105px;
+            border-radius: 100%;
+        }
+
+        .bg>div:first-child>div {
+            width: 160px;
+            height: 160px;
+            background: #B53733;
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div>
+            <div></div>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: #E38F66;
+        }
+
+        .bg {
+            width: 400px;
+            height: 300px;
+            background: #515697;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        #circle {
+            width: 360px;
+            height: 180px;
+            position: fixed;
+            top: 12px;
+            left: 20px;
+            border-top-left-radius: 180px;
+            border-top-right-radius: 180px;
+        }
+
+        #square {
+            width: 360px;
+            height: 108px;
+            position: fixed;
+            bottom: 0px;
+            left: 20px;
+        }
+
+        .rec {
+            width: 36px;
+            height: 72px;
+            position: fixed;
+            background: #515697;
+            bottom: 0px;
+        }
+
+        #rec1 {
+            left: 56px;
+        }
+
+        #rec2 {
+            left: 128px;
+        }
+
+        #rec3 {
+            right: 128px;
+        }
+
+        #rec4 {
+            right: 56px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg">
+        <div id="circle"></div>
+        <div id="square"></div>
+        <div id="rec1" class="rec"></div>
+        <div id="rec2" class="rec"></div>
+        <div id="rec3" class="rec"></div>
+        <div id="rec4" class="rec"></div>
+    </div>
+</body>
+
+</html>
