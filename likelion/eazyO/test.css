@@ -1,3 +1,4 @@
+@import "../ediya/styles/_primary.css";
 :root {
   /* gradient를 변수로 설정하는 것이 불가능 */
   /* 대신 나눠서 쓰는건 가능 */
@@ -88,8 +89,25 @@ body {
 .container1 {
   background-color: #eeeeee;
   align-items: end;
+  .baby1 {
+    box-shadow: var(--type1);
+  }
+  .baby2 {
+    box-shadow: var(--type2);
+  }
+  .baby3 {
+    box-shadow: var(--type3);
+    /* box-shadow: var(--type3); */
+  }
 }
 .container2 {
-  background-color: #121212;
+  background-color: #fff;
+  /* background-color: #121212; */
   align-items: start;
+  .baby1 {
+    box-shadow: var(--type4);
+  }
+  .baby2 {
+    box-shadow: var(--type5);
+  }
 }
