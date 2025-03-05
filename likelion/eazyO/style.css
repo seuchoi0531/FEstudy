@@ -1,0 +1,38 @@
+.nav {
+  background-color: yellow;
+  text-transform: uppercase;
+  font-family: "SUIT", sans-serif;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+/*아래 주석을 번갈아서 활성화하며 테스트 해보세요*/
+
+/* 1번 주석, a태그의 before */
+
+.nav a::before {
+  content: ": ";
+}
+.nav li:first-child > a::before {
+  content: "";
+}
+/* 잘못썼어요 */
+/*
+.nav a:first-child::before {
+    content: "";
+}
+*/
+
+/*2번 주석, li태그의 before */
+/*
+.nav li::before {
+  content: ": ";
+}
+.nav li:first-child::before {
+  content: "";
+}
+*/

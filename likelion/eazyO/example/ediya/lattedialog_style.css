@@ -1,0 +1,95 @@
+body {
+  font-size: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+table,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+.dialog {
+  border: 1px solid #cccccc;
+  width: 359px;
+  height: 373px;
+  position: absolute;
+  font-size: 16px;
+  color: #0f0f0f;
+  .dialog-main {
+    padding: 30px 20px 0;
+  }
+  .dialog-title {
+    border-bottom: 2px solid black;
+    margin-bottom: 8px;
+    .dialog-title-kr {
+      font-size: 1.125em;
+      margin-bottom: 0.5em;
+    }
+    .dialog-title-en {
+      color: #616161;
+      font-size: 0.875em;
+      margin-bottom: 1em;
+    }
+  }
+  .dialog-content {
+    font-size: 1em;
+    padding: 0 2px;
+  }
+  .dialog-analysis-table {
+    box-sizing: border-box;
+    /* margin: 10px 26px 11px; */
+    padding: 10px 26px 11px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flow-root;
+    font-size: 0.8125em;
+    th {
+      font-weight: normal;
+      text-align: left;
+    }
+    .bar {
+      float: left;
+      height: 50px;
+      border-left: 1px solid black;
+    }
+    .analysis-table {
+      width: 49.5%;
+      line-height: 120%;
+      vertical-align: middle;
+      tbody {
+        display: inline-block;
+      }
+      td,
+      th {
+        width: 60px;
+        height: 13px;
+      }
+    }
+    .analysis-table.left-table {
+      max-height: 100%;
+      float: left;
+    }
+    .analysis-table.right-table {
+      float: right;
+      tbody {
+        padding-left: 16px;
+      }
+      /* &::before {
+        content: "| ";
+        font-weight: lighter;
+        font-size: 50px;
+        padding: 16px;
+        vertical-align: middle;
+      } */
+    }
+  }
+  .dialog-exit {
+    font-size: 1em;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}

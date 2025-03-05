@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  font-family: SUIT, sans-serif;
+  background: #d9d9d9;
+  --color-plant: #22be61;
+  --color-meal: #e39042;
+  --color-content: #9b9a90;
+}
+
+.noti.plant {
+  --color: var(--color-plant);
+  .noti-image-wrap {
+    background-image: url(./assets/icon1.svg);
+  }
+}
+.noti.meal {
+  --color: var(--color-meal);
+  .noti-image-wrap {
+    background-image: url(./assets/icon2.svg);
+  }
+}
+.noti {
+  color: var(--color);
+  font-size: 16px;
+  border: 1px solid #f9fefe;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  padding: 20px;
+  margin: 40px;
+  align-items: center;
+  gap: 20px;
+  .noti-image-wrap {
+    inline-size: 28px;
+    block-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5.6px;
+    background-color: var(--color);
+  }
+  .noti-main-wrap {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .noti-top {
+    display: flex;
+    .noti-title {
+      flex-grow: 1;
+    }
+    .noti-time {
+    }
+  }
+  .noti-bottom {
+    color: var(--color-content);
+  }
+}
