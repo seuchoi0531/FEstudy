@@ -1,0 +1,24 @@
+{
+  "name": "festudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seuchoi0531/FEstudy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/seuchoi0531/FEstudy/issues"
+  },
+  "homepage": "https://github.com/seuchoi0531/FEstudy#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
