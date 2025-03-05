@@ -4,7 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./test.css" />
+    <style>
+      :root {
+        --gradient-blue-angle: 43deg;
+        --gradient-blue-start: #102457;
+        --gradient-blue-end: #3a5abd;
+        --gradient-cream-angle: -43deg;
+        --gradient-cream-start: #f4ca54;
+        --gradient-cream-end: #fcf2d4;
+        --gradient-lightblue-angle: 40deg;
+        --gradient-lightblue-start: #bae5fb;
+        --gradient-lightblue-end: #eef8fe;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+      }
+      .wrap {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+      .container {
+        min-height: 50vh;
+        padding-block: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 50px;
+        * {
+          inline-size: 160px;
+          min-width: 160px;
+          block-size: 160px;
+          border-radius: 12px;
+        }
+        *:hover {
+          scale: 2;
+        }
+
+        .baby1 {
+          background: linear-gradient(
+            var(--gradient-blue-angle),
+            var(--gradient-blue-start),
+            var(--gradient-blue-end)
+          );
+        }
+        .baby2 {
+          background: linear-gradient(
+            var(--gradient-cream-angle),
+            var(--gradient-cream-start),
+            var(--gradient-cream-end)
+          );
+        }
+        .baby3 {
+          background: linear-gradient(
+            var(--gradient-lightblue-angle),
+            var(--gradient-lightblue-start),
+            var(--gradient-lightblue-end)
+          );
+        }
+      }
+      .container1 {
+        background-color: #eeeeee;
+        align-items: end;
+      }
+      .container2 {
+        background-color: #121212;
+        align-items: start;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
