@@ -1,0 +1,105 @@
+@import "../../styles/_base-style.css";
+@import "../../styles/a11y.css";
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+h1.component-name {
+  text-align: center;
+}
+.slogan-title {
+  span {
+    font-weight: 100;
+    font-size: 25px;
+    color: var(--darkgray);
+    letter-spacing: -1px;
+    line-height: 1.1;
+    @media (min-width: 768px) {
+      font-size: 31px;
+    }
+  }
+  span.highlight {
+    font-weight: 700;
+    font-size: 31px;
+    color: var(--primary-blue1);
+    letter-spacing: -1px;
+  }
+}
+.slogan-subtitle {
+  font-size: 14px;
+  color: var(--darkgray);
+}
+.slogan {
+  display: flex;
+  flex-flow: column nowrap;
+  .slogan-title {
+    display: contents;
+  }
+  span:first-child {
+    margin-top: 42px;
+  }
+  align-items: center;
+  .highlight {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    gap: 58px;
+    .slogan-title {
+      display: block;
+      margin-top: 50px;
+    }
+  }
+}
+.view-menu-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid var(--primary-blue1);
+  padding: 8px 14px;
+  box-sizing: border-box;
+  color: var(--primary-blue1);
+  @media (min-width: 768px) {
+    padding: 8px 24px;
+  }
+}
+.banner-image {
+  line-height: 1.15;
+  font-size: 0;
+  position: relative;
+  vertical-align: top;
+  text-align: right;
+  img {
+    display: inline-block;
+    &:first-child {
+      width: 15px;
+      position: absolute;
+      top: 6px;
+      translate: -20px 0;
+    }
+    &:last-child {
+      width: 200px;
+    }
+  }
+}
+.banner {
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-lightblue1) 57%,
+    var(--white) 43%
+  );
+  @media (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      var(--secondary-lightblue1) 51%,
+      var(--white) 49%
+    );
+  }
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .view-menu-link {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}

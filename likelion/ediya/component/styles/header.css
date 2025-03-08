@@ -1,0 +1,60 @@
+@import "../../styles/_base-style.css";
+@import "../../styles/a11y.css";
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+h1.component-name {
+  text-align: center;
+}
+
+.logo-link {
+  display: block;
+  text-decoration: none;
+  width: 140px;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+.menu-link {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--primary-blue1);
+}
+.menu-nav {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+  }
+  ul {
+    display: contents;
+    li {
+      list-style: none;
+    }
+  }
+}
+.header {
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: var(--type5);
+  background-color: var(--white);
+  border: 0.5px solid var(--snow);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  .menu-icon {
+    border: 0;
+    outline: 0;
+    background: 0;
+    padding: 0;
+    font-size: 0;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

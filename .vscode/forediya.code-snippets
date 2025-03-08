@@ -1,0 +1,43 @@
+{
+  "htmltemplate": {
+    "prefix": "!ht",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"ko-KR\">",
+      "  <head>",
+      "    <meta charset=\"UTF-8\" />",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+      "    <link",
+      "      href=\"https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css\"",
+      "      rel=\"stylesheet\"",
+      "      type=\"text/css\"",
+      "    />",
+      "    <link rel=\"stylesheet\" href=\"./styles$1\" />",
+      "    <title>$2</title>",
+      "  </head>",
+      "  <body>",
+      "    <hr />",
+      "    <h1 class=\"component-name\">$3</h1>",
+      "    <hr />",
+      "    $4",
+      "  </body>",
+      "</html>",
+      ""
+    ]
+  },
+  "csstemplate": {
+    "prefix": "!ct",
+    "body": [
+      "@import \"../../styles/_base-style.css\";",
+      "@import \"../../styles/a11y.css\";",
+      "* {",
+      "  font-family: \"Spoqa Han Sans Neo\", \"sans-serif\";",
+      "}",
+      "h1.component-name {",
+      "  text-align: center;",
+      "}",
+      "$1"
+    ],
+    "description": "csstemplate"
+  }
+}
