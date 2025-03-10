@@ -47,9 +47,11 @@ h1.component-name {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  .logo-link {
+    padding-left: 18px;
+  }
   .menu-icon {
     border: 0;
-    outline: 0;
     background: 0;
     padding: 0;
     font-size: 0;
