@@ -11,7 +11,7 @@ h1.component-name {
     font-weight: 100;
     font-size: 25px;
     color: var(--darkgray);
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     line-height: 1.1;
     @media (min-width: 768px) {
       font-size: 31px;
@@ -21,7 +21,7 @@ h1.component-name {
     font-weight: 700;
     font-size: 31px;
     color: var(--primary-blue1);
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
   }
 }
 .slogan-subtitle {
@@ -54,15 +54,44 @@ h1.component-name {
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.1;
   border: 1px solid var(--primary-blue1);
-  padding: 8px 14px;
+  padding: 7px 14px;
   box-sizing: border-box;
   color: var(--primary-blue1);
   @media (min-width: 768px) {
     padding: 8px 24px;
   }
 }
-.banner-image {
+.banner-item-info {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    > * {
+      font-size: 16px;
+      line-height: 1.1;
+      /* letter-spacing: -2%; */
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+    .item-name {
+      font-weight: 700;
+      color: var(--primary-blue1);
+    }
+    .item-type-kr {
+      color: var(--secondary-lightblue1);
+    }
+    .item-type-en {
+      font-size: 12px;
+      color: var(--secondary-lightblue1);
+    }
+  }
+}
+
+.banner-item-image {
   line-height: 1.15;
   font-size: 0;
   position: relative;
@@ -82,24 +111,32 @@ h1.component-name {
   }
 }
 .banner {
+  background: var(--white);
   background: linear-gradient(
     to bottom,
-    var(--secondary-lightblue1) 57%,
-    var(--white) 43%
+    var(--secondary-lightblue1) 222px,
+    var(--white) 0
   );
+
   @media (min-width: 768px) {
     background: linear-gradient(
       to bottom,
-      var(--secondary-lightblue1) 51%,
-      var(--white) 49%
+      var(--secondary-lightblue1) 260px,
+      var(--white) 0
     );
   }
-
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   align-items: center;
-  .view-menu-link {
-    margin-top: 15px;
-    margin-bottom: 5px;
+  .slogan {
+    margin-bottom: 15px;
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+  .banner-item-image {
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
