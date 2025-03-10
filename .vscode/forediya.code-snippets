@@ -13,17 +13,34 @@
       "      type=\"text/css\"",
       "    />",
       "    <link rel=\"stylesheet\" href=\"./styles$1\" />",
+      "    <script src=\"showcomponent.js\"></script>",
       "    <title>$2</title>",
       "  </head>",
       "  <body>",
+      "    <a href=\"../\" class=\"position:absolute; top: 5px; left: 5px;\"",
+      "      ><svg",
+      "        width=\"12\"",
+      "        height=\"12\"",
+      "        viewBox=\"0 0 12 12\"",
+      "        fill=\"none\"",
+      "        xmlns=\"http://www.w3.org/2000/svg\"",
+      "      >",
+      "        <path d=\"M1 6L6 1\" stroke=\"black\" stroke-linecap=\"round\" />",
+      "        <path d=\"M1 6H11\" stroke=\"black\" stroke-linecap=\"round\" />",
+      "        <path d=\"M1 6L6 11\" stroke=\"black\" stroke-linecap=\"round\" />",
+      "      </svg>",
+      "    </a>",
       "    <hr />",
-      "    <h1 class=\"component-name\">$3</h1>",
+      "    <h1 class=\"component-name\">",
+      "      <button onclick=\"scrollToBottom()\">${2:component-name}</button>",
+      "    </h1>",
       "    <hr />",
-      "    $4",
+      "    $3",
       "  </body>",
       "</html>",
       ""
-    ]
+    ],
+    "description": "htmltemplate"
   },
   "csstemplate": {
     "prefix": "!ct",
@@ -35,9 +52,21 @@
       "}",
       "h1.component-name {",
       "  text-align: center;",
+      "  button {",
+      "    font: inherit;",
+      "    margin: 0;",
+      "    padding: 0;",
+      "    border: 0;",
+      "    background: 0;",
+      "  }",
       "}",
       "$1"
     ],
     "description": "csstemplate"
+  },
+  "media query min-width: 768px": {
+    "prefix": "@mqmw",
+    "body": ["@media (min-width: ${1:768px}) {", "  $2", "}"],
+    "description": "media query min-width: 768px"
   }
 }
