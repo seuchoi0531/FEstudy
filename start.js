@@ -5,7 +5,7 @@ const folderName = process.argv[2] || "./";
 
 const folderPath = path.resolve(folderName);
 try {
-  execSync(`npx live-server ${folderPath} --port=1010 --localhost`, {
+  execSync(`npx live-server ${folderPath} --port=3010 --host=localhost`, {
     stdio: "inherit",
   });
 } catch (error) {
