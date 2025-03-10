@@ -5,13 +5,6 @@
 }
 h1.component-name {
   text-align: center;
-  button {
-    font: inherit;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: 0;
-  }
 }
 .promotion-video {
   width: 100%;
