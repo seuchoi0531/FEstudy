@@ -1,0 +1,27 @@
+@import "../component/styles/header.css";
+@import "../component/styles/banner.css";
+@import "../component/styles/promotion.css";
+@import "../component/styles/footer.css";
+body,
+.wrap {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns:
+      [wrap-start] repeat(2, minmax(1fr, 75px))
+      [content-start] repeat(8, minmax(1fr, 75px))
+      [content-end] repeat(2, minmax(1fr, 75px)) [wrap-end];
+    column-gap: 20px;
+    margin-inline: auto;
+    /* .grid-wrap {
+      display: ;
+      grid-template-columns: subgrid;
+      grid-column: content;
+    } */
+  }
+}
